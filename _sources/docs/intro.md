@@ -1,10 +1,10 @@
 # Hello, World!
 
 ```{caution}
-本書の目的は様々な言語で**Hello, World!**することです. なお, 出力はコンソールへの標準出力のみとします. また, 扱う言語は気まぐれです.
+本書の目的は様々な言語でHello, World!することです. なお, 出力はコンソールへの標準出力のみとします. また, 扱う言語は気まぐれです.
 ```
 
-`````{admonition} Enviroment
+`````{admonition} Environment
 :class: note
 ```bash
 $ lsb_release -a
@@ -17,3 +17,9 @@ $ uname -r
 5.15.153.1-microsoft-standard-WSL2
 ```
 `````
+
+## TOC
+
+```{tableofcontents}
+
+```
