@@ -427,6 +427,10 @@ There<span class="w"> </span>is<span class="w"> </span>NO<span class="w"> </span
 </section>
 <section id="example">
 <h2>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h2>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+hello.adb</label><div class="sd-tab-content docutils">
 <div class="highlight-adb notranslate"><div class="highlight"><pre><span></span>with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Hello is
@@ -435,6 +439,10 @@ begin
 end Hello;
 </pre></div>
 </div>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Console</label><div class="sd-tab-content docutils">
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>gnat<span class="w"> </span>make<span class="w"> </span>hello.adb
 x86_64-linux-gnu-gcc-10<span class="w"> </span>-c<span class="w"> </span>hello.adb
 x86_64-linux-gnu-gnatbind-10<span class="w"> </span>-x<span class="w"> </span>hello.ali
@@ -442,6 +450,8 @@ x86_64-linux-gnu-gnatlink-10<span class="w"> </span>hello.ali
 $<span class="w"> </span>./hello
 Hello,<span class="w"> </span>World!
 </pre></div>
+</div>
+</div>
 </div>
 </section>
 </section>

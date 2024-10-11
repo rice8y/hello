@@ -21,6 +21,8 @@ There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR P
 
 ## Example
 
+`````{tab-set}
+````{tab-item} hello.adb
 ```adb
 with Ada.Text_IO; use Ada.Text_IO;
 
@@ -29,7 +31,9 @@ begin
     Put_Line("Hello, World!");
 end Hello;
 ```
+````
 
+````{tab-item} Console
 ```bash
 $ gnat make hello.adb
 x86_64-linux-gnu-gcc-10 -c hello.adb
@@ -38,3 +42,5 @@ x86_64-linux-gnu-gnatlink-10 hello.ali
 $ ./hello
 Hello, World!
 ```
+````
+`````
