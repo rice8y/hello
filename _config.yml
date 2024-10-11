@@ -73,6 +73,7 @@ sphinx:
 
   extra_extensions:
     - sphinx_inline_tabs
+    - sphinx_proof
 
 parse:
    myst_url_schemes: [mailto, http, https]

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Crystal &#8212; Hello, World!</title>
+    <title>Julia &#8212; Hello, World!</title>
   
   
   
@@ -60,12 +60,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/cr';</script>
-    <link rel="canonical" href="https://rice8y.github.io/hello/docs/cr.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/jl';</script>
+    <link rel="canonical" href="https://rice8y.github.io/hello/docs/jl.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="D" href="d.html" />
-    <link rel="prev" title="C" href="c.html" />
+    <link rel="next" title="JavaScript" href="js.html" />
+    <link rel="prev" title="Java" href="java.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="unknown"/>
   </head>
@@ -184,13 +184,13 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="adb.html">Ada</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c.html">C</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Crystal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cr.html">Crystal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="d.html">D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="f.html">Fortran</a></li>
 <li class="toctree-l1"><a class="reference internal" href="go.html">Go</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cpp.html">C++</a></li>
 <li class="toctree-l1"><a class="reference internal" href="java.html">Java</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jl.html">Julia</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Julia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="js.html">JavaScript</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lua.html">Lua</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ml.html">OCaml</a></li>
@@ -273,7 +273,7 @@
       
       
       
-      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/cr.md" target="_blank"
+      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/jl.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -303,7 +303,7 @@
       
       
       
-      <li><a href="../_sources/docs/cr.md" target="_blank"
+      <li><a href="../_sources/docs/jl.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -387,7 +387,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Crystal</h1>
+    <h1>Julia</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -398,6 +398,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reloading-the-path-environment-variable">Reloading the PATH environment variable</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#version">Version</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 </ul>
@@ -411,22 +412,26 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="crystal">
-<h1>Crystal<a class="headerlink" href="#crystal" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="julia">
+<h1>Julia<a class="headerlink" href="#julia" title="Link to this heading">#</a></h1>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
-<p>Crystalをインストールする.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://crystal-lang.org/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>$<span class="w"> </span>sudo<span class="w"> </span>bash
+<p>Juliaをインストールする.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://install.julialang.org<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
+</pre></div>
+</div>
+</section>
+<section id="reloading-the-path-environment-variable">
+<h2>Reloading the PATH environment variable<a class="headerlink" href="#reloading-the-path-environment-variable" title="Link to this heading">#</a></h2>
+<p>環境変数を再読み込みする.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>.<span class="w"> </span>~/.bashrc
 </pre></div>
 </div>
 </section>
 <section id="version">
 <h2>Version<a class="headerlink" href="#version" title="Link to this heading">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>crystal<span class="w"> </span>--version
-Crystal<span class="w"> </span><span class="m">1</span>.14.0<span class="w"> </span><span class="o">[</span>dacd97bcc<span class="o">]</span><span class="w"> </span><span class="o">(</span><span class="m">2024</span>-10-09<span class="o">)</span>
-
-LLVM:<span class="w"> </span><span class="m">18</span>.1.6
-Default<span class="w"> </span>target:<span class="w"> </span>x86_64-unknown-linux-gnu
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>julia<span class="w"> </span>--version
+julia<span class="w"> </span>version<span class="w"> </span><span class="m">1</span>.11.0
 </pre></div>
 </div>
 </section>
@@ -434,13 +439,29 @@ Default<span class="w"> </span>target:<span class="w"> </span>x86_64-unknown-lin
 <h2>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h2>
 <div class="tab-set docutils">
 <input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">Code</label><div class="tab-content docutils">
-<p><code class="docutils literal notranslate"><span class="pre">hello.cr</span></code>:</p>
-<div class="highlight-cr notranslate"><div class="highlight"><pre><span></span><span class="nb">puts</span><span class="w"> </span><span class="s2">&quot;Hello, World!&quot;</span>
+<p><code class="docutils literal notranslate"><span class="pre">hello.jl</span></code>:</p>
+<div class="highlight-jl notranslate"><div class="highlight"><pre><span></span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Hello, World!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Console</label><div class="tab-content docutils">
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>crystal<span class="w"> </span>hello.cr
+<p><strong><code class="docutils literal notranslate"><span class="pre">julia</span></code> Ver.</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>julia<span class="w"> </span>hello.jl
+Hello,<span class="w"> </span>World!
+</pre></div>
+</div>
+<p><strong>REPL Ver.</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>julia
+<span class="w">               </span>_
+<span class="w">   </span>_<span class="w">       </span>_<span class="w"> </span>_<span class="o">(</span>_<span class="o">)</span>_<span class="w">     </span><span class="p">|</span><span class="w">  </span>Documentation:<span class="w"> </span>https://docs.julialang.org
+<span class="w">  </span><span class="o">(</span>_<span class="o">)</span><span class="w">     </span><span class="p">|</span><span class="w"> </span><span class="o">(</span>_<span class="o">)</span><span class="w"> </span><span class="o">(</span>_<span class="o">)</span><span class="w">    </span><span class="p">|</span>
+<span class="w">   </span>_<span class="w"> </span>_<span class="w">   </span>_<span class="p">|</span><span class="w"> </span><span class="p">|</span>_<span class="w">  </span>__<span class="w"> </span>_<span class="w">   </span><span class="p">|</span><span class="w">  </span>Type<span class="w"> </span><span class="s2">&quot;?&quot;</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>help,<span class="w"> </span><span class="s2">&quot;]?&quot;</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>Pkg<span class="w"> </span>help.
+<span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span>/<span class="w"> </span>_<span class="sb">`</span><span class="w"> </span><span class="p">|</span><span class="w">  </span><span class="p">|</span>
+<span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span>_<span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="o">(</span>_<span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w">  </span><span class="p">|</span><span class="w">  </span>Version<span class="w"> </span><span class="m">1</span>.11.0<span class="w"> </span><span class="o">(</span><span class="m">2024</span>-10-07<span class="o">)</span>
+<span class="w"> </span>_/<span class="w"> </span><span class="p">|</span><span class="se">\_</span>_<span class="s1">&#39;_|_|_|\__&#39;</span>_<span class="p">|</span><span class="w">  </span><span class="p">|</span><span class="w">  </span>Official<span class="w"> </span>https://julialang.org/<span class="w"> </span>release
+<span class="p">|</span>__/<span class="w">                   </span><span class="p">|</span>
+
+julia&gt;<span class="w"> </span>println<span class="o">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="o">)</span>
 Hello,<span class="w"> </span>World!
 </pre></div>
 </div>
@@ -480,20 +501,20 @@ Hello,<span class="w"> </span>World!
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="c.html"
+       href="java.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">C</p>
+        <p class="prev-next-title">Java</p>
       </div>
     </a>
     <a class="right-next"
-       href="d.html"
+       href="js.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">D</p>
+        <p class="prev-next-title">JavaScript</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -514,6 +535,7 @@ Hello,<span class="w"> </span>World!
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reloading-the-path-environment-variable">Reloading the PATH environment variable</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#version">Version</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 </ul>
