@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
   
@@ -392,8 +392,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#initialise-opam">Initialise opam</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#version">Version</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ocaml-ver"><code class="docutils literal notranslate"><span class="pre">ocaml</span></code> Ver.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ocamlc-ver"><code class="docutils literal notranslate"><span class="pre">ocamlc</span></code> Ver.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ocamlopt-ver"><code class="docutils literal notranslate"><span class="pre">ocamlopt</span></code> Ver.</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -407,6 +414,20 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="ocaml">
 <h1>OCaml<a class="headerlink" href="#ocaml" title="Link to this heading">#</a></h1>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
+<p>Ocamlをインストールする.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>opam
+</pre></div>
+</div>
+</section>
+<section id="initialise-opam">
+<h2>Initialise opam<a class="headerlink" href="#initialise-opam" title="Link to this heading">#</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>opam<span class="w"> </span>init
+<span class="nb">eval</span><span class="w"> </span><span class="k">$(</span>opam<span class="w"> </span>env<span class="k">)</span>
+</pre></div>
+</div>
+</section>
 <section id="version">
 <h2>Version<a class="headerlink" href="#version" title="Link to this heading">#</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ocaml<span class="w"> </span>--version
@@ -419,10 +440,29 @@ The<span class="w"> </span>OCaml<span class="w"> </span>toplevel,<span class="w"
 <div class="highlight-ml notranslate"><div class="highlight"><pre><span></span>print_endline &quot;Hello, World!&quot;
 </pre></div>
 </div>
+<section id="ocaml-ver">
+<h3><code class="docutils literal notranslate"><span class="pre">ocaml</span></code> Ver.<a class="headerlink" href="#ocaml-ver" title="Link to this heading">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ocaml<span class="w"> </span>hello.ml
 Hello,<span class="w"> </span>World!
 </pre></div>
 </div>
+</section>
+<section id="ocamlc-ver">
+<h3><code class="docutils literal notranslate"><span class="pre">ocamlc</span></code> Ver.<a class="headerlink" href="#ocamlc-ver" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ocamlc<span class="w"> </span>-o<span class="w"> </span>hello<span class="w"> </span>hello.ml
+$<span class="w"> </span>./hello
+Hello,<span class="w"> </span>World!
+</pre></div>
+</div>
+</section>
+<section id="ocamlopt-ver">
+<h3><code class="docutils literal notranslate"><span class="pre">ocamlopt</span></code> Ver.<a class="headerlink" href="#ocamlopt-ver" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ocamlopt<span class="w"> </span>-o<span class="w"> </span>hello<span class="w"> </span>hello.ml
+$<span class="w"> </span>./hello
+Hello,<span class="w"> </span>World!
+</pre></div>
+</div>
+</section>
 </section>
 </section>
 
@@ -490,8 +530,15 @@ Hello,<span class="w"> </span>World!
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#initialise-opam">Initialise opam</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#version">Version</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ocaml-ver"><code class="docutils literal notranslate"><span class="pre">ocaml</span></code> Ver.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ocamlc-ver"><code class="docutils literal notranslate"><span class="pre">ocamlc</span></code> Ver.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ocamlopt-ver"><code class="docutils literal notranslate"><span class="pre">ocamlopt</span></code> Ver.</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

@@ -2,6 +2,8 @@
 
 ## Installation
 
+AdaコンパイラであるGNATをインストールする.
+
 ```bash
 sudo apt-get install gnat
 ```

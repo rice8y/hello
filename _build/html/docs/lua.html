@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
   
@@ -395,8 +395,9 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#version">Version</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#script-mode">Script Mode</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interactive-mode">Interactive Mode</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lua-ver"><code class="docutils literal notranslate"><span class="pre">lua</span></code> Ver.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#luac-ver"><code class="docutils literal notranslate"><span class="pre">luac</span></code> Ver.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#repl-ver">REPL Ver.</a></li>
 </ul>
 </li>
 </ul>
@@ -414,6 +415,7 @@ document.write(`
 <h1>Lua<a class="headerlink" href="#lua" title="Link to this heading">#</a></h1>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
+<p>Luaをインストールする.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>lua5.3
 </pre></div>
 </div>
@@ -427,18 +429,26 @@ Lua<span class="w"> </span><span class="m">5</span>.3.6<span class="w">  </span>
 </section>
 <section id="example">
 <h2>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h2>
-<section id="script-mode">
-<h3>Script Mode<a class="headerlink" href="#script-mode" title="Link to this heading">#</a></h3>
 <div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+<section id="lua-ver">
+<h3><code class="docutils literal notranslate"><span class="pre">lua</span></code> Ver.<a class="headerlink" href="#lua-ver" title="Link to this heading">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>lua<span class="w"> </span>hello.lua
 Hello,<span class="w"> </span>World!
 </pre></div>
 </div>
 </section>
-<section id="interactive-mode">
-<h3>Interactive Mode<a class="headerlink" href="#interactive-mode" title="Link to this heading">#</a></h3>
+<section id="luac-ver">
+<h3><code class="docutils literal notranslate"><span class="pre">luac</span></code> Ver.<a class="headerlink" href="#luac-ver" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>luac<span class="w"> </span>-o<span class="w"> </span>hello.luac<span class="w"> </span>hello.lua
+$<span class="w"> </span>lua<span class="w"> </span>hello.luac
+Hello,<span class="w"> </span>World!
+</pre></div>
+</div>
+</section>
+<section id="repl-ver">
+<h3>REPL Ver.<a class="headerlink" href="#repl-ver" title="Link to this heading">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>lua
 Lua<span class="w"> </span><span class="m">5</span>.3.6<span class="w">  </span>Copyright<span class="w"> </span><span class="o">(</span>C<span class="o">)</span><span class="w"> </span><span class="m">1994</span>-2020<span class="w"> </span>Lua.org,<span class="w"> </span>PUC-Rio
 &gt;<span class="w"> </span>print<span class="o">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="o">)</span>
@@ -516,8 +526,9 @@ Hello,<span class="w"> </span>World!
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#version">Version</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#script-mode">Script Mode</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interactive-mode">Interactive Mode</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lua-ver"><code class="docutils literal notranslate"><span class="pre">lua</span></code> Ver.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#luac-ver"><code class="docutils literal notranslate"><span class="pre">luac</span></code> Ver.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#repl-ver">REPL Ver.</a></li>
 </ul>
 </li>
 </ul>

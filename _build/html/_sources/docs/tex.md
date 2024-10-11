@@ -2,6 +2,8 @@
 
 ## Installation
 
+TeX Live[^1]をインストールする.
+
 ```bash
 wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 tar xvf install-tl-unx.tar.gz
@@ -92,3 +94,5 @@ Hello, World!
 warning  (pdf backend): no pages of output.
 Transcript written on hello.log.
 ```
+
+[^1]: TeX のディストリビューション.

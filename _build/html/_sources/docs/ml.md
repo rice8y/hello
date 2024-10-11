@@ -1,5 +1,20 @@
 # OCaml
 
+## Installation
+
+Ocamlをインストールする.
+
+```bash
+sudo apt-get install opam
+```
+
+## Initialise opam
+
+```bash
+opam init
+eval $(opam env)
+```
+
 ## Version
 
 ```bash
@@ -13,7 +28,25 @@ The OCaml toplevel, version 4.12.0
 print_endline "Hello, World!"
 ```
 
+### `ocaml` Ver.
+
 ```bash
 $ ocaml hello.ml
+Hello, World!
+```
+
+### `ocamlc` Ver.
+
+```bash
+$ ocamlc -o hello hello.ml
+$ ./hello
+Hello, World!
+```
+
+### `ocamlopt` Ver.
+
+```bash
+$ ocamlopt -o hello hello.ml
+$ ./hello
 Hello, World!
 ```
