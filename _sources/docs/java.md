@@ -2,6 +2,8 @@
 
 ## Installation
 
+JavaコンパイラとJava実行環境をインストールする.
+
 ```bash
 sudo apt install default-jre
 sudo apt install default-jdk

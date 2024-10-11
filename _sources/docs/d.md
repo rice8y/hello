@@ -2,11 +2,15 @@
 
 ## Installation
 
+Dをインストールする.
+
 ```bash
 curl https://dlang.org/install.sh | bash -s
 ```
 
 ## Activate
+
+DMDを起動する.
 
 ```bash
 source ~/dlang/dmd-2.109.1/activate

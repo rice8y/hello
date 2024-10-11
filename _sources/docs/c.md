@@ -2,6 +2,8 @@
 
 ## Installation
 
+`gcc`を使用するために`build-essential`をインストールする.
+
 ```bash
 sudo apt install build-essential
 ```

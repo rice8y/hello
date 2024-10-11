@@ -2,6 +2,8 @@
 
 ## Installation
 
+Goをインストールする.
+
 ```bash
 sudo apt install -y golang
 ```
@@ -24,7 +26,17 @@ func main() {
 }
 ```
 
+### `go run` Ver.
+
 ```bash
 $ go run hello.go
+Hello, World!
+```
+
+### `go build` Ver.
+
+```bash
+$ go build hello.go
+$ ./hello
 Hello, World!
 ```
