@@ -5,10 +5,10 @@
 TeX Live[^1]をインストールする.
 
 ```bash
-wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
-tar xvf install-tl-unx.tar.gz
-cd install-tl-20241010
-sudo ./install-tl -no-gui
+$ wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+$ tar xvf install-tl-unx.tar.gz
+$ cd install-tl-20241010
+$ sudo ./install-tl -no-gui
 ```
 
 ```bash
@@ -106,5 +106,19 @@ Transcript written on hello.log.
 ```
 ````
 `````
+
+````{tab} Python
+```python
+def main():
+    return
+```
+````
+````{tab} C++
+```c++
+int main(const int argc, const char **argv) {
+  return 0;
+}
+```
+````
 
 [^1]: TeX のディストリビューション.

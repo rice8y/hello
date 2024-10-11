@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-sudo apt install perl
+$ sudo apt install perl
 ```
 
 ## Version

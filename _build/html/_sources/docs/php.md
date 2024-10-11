@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-sudo apt install php libapache2-mod-php
+$ sudo apt install php libapache2-mod-php
 ```
 
 ## Version

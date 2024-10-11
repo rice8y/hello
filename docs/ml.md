@@ -5,14 +5,14 @@
 Ocamlをインストールする.
 
 ```bash
-sudo apt-get install opam
+$ sudo apt-get install opam
 ```
 
 ## Initialise opam
 
 ```bash
-opam init
-eval $(opam env)
+$ opam init
+$ eval $(opam env)
 ```
 
 ## Version

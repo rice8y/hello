@@ -5,7 +5,7 @@
 Luaをインストールする.
 
 ```bash
-sudo apt install lua5.3
+$ sudo apt install lua5.3
 ```
 
 ## Version

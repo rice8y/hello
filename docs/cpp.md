@@ -5,7 +5,7 @@
 `g++`を使用するために`build-essential`をインストールする.
 
 ```bash
-sudo apt install build-essential
+$ sudo apt install build-essential
 ```
 
 ## Version
