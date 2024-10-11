@@ -22,6 +22,8 @@ javac 11.0.24
 
 ## Example
 
+`````{tab-set}
+````{tab-item} Hello.java
 ```java
 public class Hello {
     public static void main(String[] args) {
@@ -29,9 +31,13 @@ public class Hello {
     }
 }
 ```
+````
 
+````{tab-item} Console
 ```bash
 $ javac Hello.java
 $ java Hello
 Hello, World!
 ```
+````
+`````

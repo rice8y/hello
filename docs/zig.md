@@ -13,6 +13,10 @@ $ zig version
 0.13.0
 ```
 
+## Example
+
+`````{tab-set}
+````{tab-item} hello.zig
 ```zig
 const std = @import("std");
 
@@ -21,9 +25,13 @@ pub fn main() !void {
     try stdout.print("Hello, {s}!\n", .{"world"});
 }
 ```
+````
 
+````{tab-item} Console
 ```bash
 $ zig build-exe hello.zig
 $ ./hello
 Hello, world!
 ```
+````
+`````
