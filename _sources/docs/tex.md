@@ -74,9 +74,7 @@ Transcript written on hello.log.
 \end{document}
 ```
 ````
-`````
 
-`````{tab-set}
 ````{tab-item} Console
 ```bash
 $ lualatex hello.tex
