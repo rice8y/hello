@@ -1,0 +1,37 @@
+# D
+
+## Installation
+
+```bash
+curl https://dlang.org/install.sh | bash -s
+```
+
+## Activate
+
+```bash
+source ~/dlang/dmd-2.109.1/activate
+```
+
+## Version
+
+```bash
+$ dmd --version
+DMD64 D Compiler v2.109.1
+Copyright (C) 1999-2024 by The D Language Foundation, All Rights Reserved written by Walter Bright
+```
+
+## Example
+
+```d
+import std.stdio;
+
+void main() {
+    writeln("Hello, World!");
+}
+```
+
+```bash
+$ dmd hello.d -of=hello
+$ ./hello
+Hello, World!
+```
