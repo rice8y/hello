@@ -65,16 +65,6 @@ Transcript written on hello.log.
 
 ### LaTeX
 
-````{tab-set}
-```{tab-item} Tab 1 title
-My first tab
-```
-
-```{tab-item} Tab 2 title
-My second tab with `some code`!
-```
-````
-
 `````{tab-set}
 ````{tab-item} hello.tex
 ```latex
@@ -86,6 +76,8 @@ My second tab with `some code`!
 ````
 `````
 
+`````{tab-set}
+````{tab-item} Console
 ```bash
 $ lualatex hello.tex
 This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)
@@ -108,5 +100,7 @@ Hello, World!
 warning  (pdf backend): no pages of output.
 Transcript written on hello.log.
 ```
+````
+`````
 
 [^1]: TeX のディストリビューション.
