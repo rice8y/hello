@@ -26,8 +26,9 @@ Copyright (C) 1999-2024 by The D Language Foundation, All Rights Reserved writte
 
 ## Example
 
-`````{tab-set}
-````{tab-item} hello.d
+````{tab} Code
+`hello.d`:
+
 ```d
 import std.stdio;
 
@@ -37,11 +38,10 @@ void main() {
 ```
 ````
 
-````{tab-item} Console
+````{tab} Console
 ```bash
 $ dmd hello.d -of=hello
 $ ./hello
 Hello, World!
 ```
 ````
-`````

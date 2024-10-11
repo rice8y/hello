@@ -21,8 +21,9 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 ## Example
 
-`````{tab-set}
-````{tab-item} hello.c
+````{tab} Code
+`hello.c`:
+
 ```c
 #include <stdio.h>
 
@@ -33,11 +34,10 @@ int main() {
 ```
 ````
 
-````{tab-item} Console
+````{tab} Console
 ```bash
 $ gcc hello.c -o hello
 $ ./hello
 Hello, World!
 ```
 ````
-`````

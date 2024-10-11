@@ -28,17 +28,17 @@ active boot switches: -d:release
 
 ## Example
 
-`````{tab-set}
-````{tab-item} hello.nim
+````{tab} Code
+`hello.nim`:
+
 ```nim
 echo "Hello, World!"
 ```
 ````
 
-````{tab-item} Console
+````{tab} Console
 ```bash
 $ nim c --hints:off --run hello.nim
 Hello, World!
 ```
 ````
-`````

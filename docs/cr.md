@@ -20,17 +20,17 @@ Default target: x86_64-unknown-linux-gnu
 
 ## Example
 
-`````{tab-set}
-````{tab-item} hello.cr
+````{tab} Code
+`hello.cr`:
+
 ```cr
 puts "Hello, World!"
 ```
 ````
 
-````{tab-item} Console
+````{tab} Console
 ```bash
 $ crystal hello.cr
 Hello, World!
 ```
 ````
-`````

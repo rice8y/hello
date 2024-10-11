@@ -18,8 +18,9 @@ Zend Engine v4.1.2, Copyright (c) Zend Technologies
 
 ## Example
 
-`````{tab-set}
-````{tab-item} hello.php
+````{tab} Code
+`hello.php`:
+
 ```php
 <?php
 echo "Hello, World!\n";
@@ -27,10 +28,9 @@ echo "Hello, World!\n";
 ```
 ````
 
-````{tab-item} Console
+````{tab} Console
 ```bash
 $ php hello.php
 Hello, World!
 ```
 ````
-`````
