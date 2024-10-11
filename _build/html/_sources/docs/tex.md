@@ -65,7 +65,7 @@ Transcript written on hello.log.
 
 ### LaTeX
 
-```latex
+```latex:hello.tex
 \documentclass{article}
 \begin{document}
 \immediate\write0{Hello, World!}
