@@ -1,21 +1,22 @@
 format: jb-article
 root: docs/intro
 sections:
-- file: docs/c
-- file: docs/cpp
-- file: docs/go
-- file: docs/rs
-- file: docs/nim
-- file: docs/zig
-- file: docs/cr
 - file: docs/adb
+- file: docs/c
+- file: docs/cr
 - file: docs/d
 - file: docs/f
+- file: docs/go
+- file: docs/cpp
 - file: docs/java
 - file: docs/js
-- file: docs/ml
 - file: docs/lua
+- file: docs/ml
+- file: docs/nim
 - file: docs/php
 - file: docs/pl
 - file: docs/py
+- file: docs/rs
+- file: docs/s
 - file: docs/tex
+- file: docs/zig
