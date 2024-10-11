@@ -5,7 +5,7 @@
 Fortran90のコンパイラとしてGFortranをインストールする.
 
 ```bash
-sudo apt-get install gfortran 
+$ sudo apt-get install gfortran 
 ```
 
 ## Version

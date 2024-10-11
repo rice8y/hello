@@ -15,14 +15,15 @@ Python 3.10.12
 
 ## Example
 
-`````{tab-set}
-````{tab-item} hello.py
-```python
+````{tab} Code
+`hello.py`:
+
+```py
 print("Hello, World!")
 ```
 ````
 
-````{tab-item} Console
+````{tab} Console
 **`python3` Ver.**
 
 ```bash
@@ -40,4 +41,3 @@ Type "help", "copyright", "credits" or "license" for more information.
 Hello, World!
 ```
 ````
-`````

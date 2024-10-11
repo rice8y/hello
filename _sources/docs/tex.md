@@ -107,18 +107,4 @@ Transcript written on hello.log.
 ````
 `````
 
-````{tab} Python
-```python
-def main():
-    return
-```
-````
-````{tab} C++
-```c++
-int main(const int argc, const char **argv) {
-  return 0;
-}
-```
-````
-
 [^1]: TeX のディストリビューション.
