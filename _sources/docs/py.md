@@ -15,18 +15,22 @@ Python 3.10.12
 
 ## Example
 
-### Script Mode
-
+`````{tab-set}
+````{tab-item} Hello.py
 ```py
 print("Hello, World!")
 ```
+````
+
+````{tab-item} Console
+**`python3` Ver.**
 
 ```bash
 $ python3 hello.py
 Hello, World!
 ```
 
-### Interactive Mode
+**REPL Ver.**
 
 ```bash
 $ python3
@@ -35,3 +39,5 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> print("Hello, World!")
 Hello, World!
 ```
+````
+`````
