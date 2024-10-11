@@ -5,7 +5,7 @@
 Dをインストールする.
 
 ```bash
-curl https://dlang.org/install.sh | bash -s
+$ curl https://dlang.org/install.sh | bash -s
 ```
 
 ## Activate
@@ -13,7 +13,7 @@ curl https://dlang.org/install.sh | bash -s
 DMDを起動する.
 
 ```bash
-source ~/dlang/dmd-2.109.1/activate
+$ source ~/dlang/dmd-2.109.1/activate
 ```
 
 ## Version

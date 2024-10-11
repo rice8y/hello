@@ -5,7 +5,7 @@
 Crystalをインストールする.
 
 ```bash
-curl -fsSL https://crystal-lang.org/install.sh | sudo bash
+$ curl -fsSL https://crystal-lang.org/install.sh | $ sudo bash
 ```
 
 ## Version

@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-sudo snap install zig --classic --beta
+$ sudo snap install zig --classic --beta
 ```
 
 ## Version

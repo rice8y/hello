@@ -5,7 +5,7 @@
 JavaScript実行環境(Node.js)をインストールする.
 
 ```bash
-sudo apt install nodejs
+$ sudo apt install nodejs
 ```
 
 ## Version

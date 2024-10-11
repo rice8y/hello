@@ -3,15 +3,15 @@
 ## Installation
 
 ```bash
-curl https://nim-lang.org/choosenim/init.sh -sSf | sh
+$ curl https://nim-lang.org/choosenim/init.sh -sSf | sh
 ```
 
 ```bash
-nano ~/.bashrc
+$ nano ~/.bashrc
 ```
 
 ```bash
-export PATH=/home/tu-nombre-usuario/.nimble/bin:$PATH
+$ export PATH=/home/tu-nombre-usuario/.nimble/bin:$PATH
 ```
 
 ## Version
