@@ -11,6 +11,10 @@ $ cd install-tl-20241010
 $ sudo ./install-tl -no-gui
 ```
 
+## Configuring the PATH environment variable
+
+`/usr/local/texlive/2024/bin/x86_64-linux`を環境変数に追加する.
+
 ```bash
 export PATH="$PATH:/usr/local/texlive/2024/bin/x86_64-linux"
 ```
@@ -47,15 +51,16 @@ Compiled with xpdf version 4.04
 
 ### TeX
 
-`````{tab-set}
-````{tab-item} hello.tex
+````{tab} Code
+`hello.tex`:
+
 ```tex
 \immediate\write0{Hello, World!}
 \end
 ```
 ````
 
-````{tab-item} Console
+````{tab} Console
 ```bash
 $ luatex --halt-on-error hello.tex
 This is LuaTeX, Version 1.18.0 (TeX Live 2024)
@@ -67,12 +72,12 @@ warning  (pdf backend): no pages of output.
 Transcript written on hello.log.
 ```
 ````
-`````
 
 ### LaTeX
 
-`````{tab-set}
-````{tab-item} hello.tex
+````{tab} Code
+`hello.tex`:
+
 ```latex
 \documentclass{article}
 \begin{document}
@@ -81,7 +86,7 @@ Transcript written on hello.log.
 ```
 ````
 
-````{tab-item} Console
+````{tab} Console
 ```bash
 $ lualatex hello.tex
 This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)
@@ -105,6 +110,5 @@ warning  (pdf backend): no pages of output.
 Transcript written on hello.log.
 ```
 ````
-`````
 
 [^1]: TeX のディストリビューション.

@@ -24,14 +24,15 @@ The OCaml toplevel, version 4.12.0
 
 ## Example
 
-`````{tab-set}
-````{tab-item} hello.ml
+````{tab} Code
+`hello.ml`:
+
 ```ml
 print_endline "Hello, World!"
 ```
 ````
 
-````{tab-item} Console
+````{tab} Console
 **`ocaml` Ver.**
 
 ```bash
@@ -55,4 +56,3 @@ $ ./hello
 Hello, World!
 ```
 ````
-`````

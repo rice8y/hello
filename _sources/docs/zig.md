@@ -15,8 +15,9 @@ $ zig version
 
 ## Example
 
-`````{tab-set}
-````{tab-item} hello.zig
+````{tab} Code
+`hello.zig`:
+
 ```zig
 const std = @import("std");
 
@@ -27,11 +28,10 @@ pub fn main() !void {
 ```
 ````
 
-````{tab-item} Console
+````{tab} Console
 ```bash
 $ zig build-exe hello.zig
 $ ./hello
 Hello, world!
 ```
 ````
-`````

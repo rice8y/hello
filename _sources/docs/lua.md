@@ -17,14 +17,15 @@ Lua 5.3.6  Copyright (C) 1994-2020 Lua.org, PUC-Rio
 
 ## Example
 
-`````{tab-set}
-````{tab-item} hello.lua
+````{tab} Code
+`hello.lua`:
+
 ```lua
 print("Hello, World!")
 ```
 ````
 
-````{tab-item} Console
+````{tab} Console
 **`lua` Ver.**
 
 ```bash
@@ -49,4 +50,3 @@ Lua 5.3.6  Copyright (C) 1994-2020 Lua.org, PUC-Rio
 Hello, World!
 ```
 ````
-`````

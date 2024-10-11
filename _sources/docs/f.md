@@ -21,8 +21,9 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 ## Example
 
-`````{tab-set}
-````{tab-item} hello.f90
+````{tab} Code
+`hello.f90`:
+
 ```f90
 program hello
     print *, "Hello, World!"
@@ -30,11 +31,10 @@ end program hello
 ```
 ````
 
-````{tab-item} Console
+````{tab} Console
 ```bash
 $ gfortran hello.f90 -o hello
 $ ./hello
  Hello, World!
 ```
 ````
-`````
