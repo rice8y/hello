@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-sudo apt install -y perl
+sudo apt install perl
 ```
 
 ## Version
@@ -24,6 +24,8 @@ this system using "man perl" or "perldoc perl".  If you have access to the
 Internet, point your browser at http://www.perl.org/, the Perl Home Page.
 
 ```
+
+## Example
 
 ```pl
 print "Hello, World!\n";
