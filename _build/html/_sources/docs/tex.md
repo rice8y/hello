@@ -65,12 +65,26 @@ Transcript written on hello.log.
 
 ### LaTeX
 
-```latex:hello.tex
+````{tab-set}
+```{tab-item} Tab 1 title
+My first tab
+```
+
+```{tab-item} Tab 2 title
+My second tab with `some code`!
+```
+````
+
+`````{tab-set}
+````{tab-item} hello.tex
+```latex
 \documentclass{article}
 \begin{document}
 \immediate\write0{Hello, World!}
 \end{document}
 ```
+````
+`````
 
 ```bash
 $ lualatex hello.tex
