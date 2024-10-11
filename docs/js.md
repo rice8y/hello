@@ -17,11 +17,17 @@ v22.2.0
 
 ## Example
 
+`````{tab-set}
+````{tab-item} hello.js
 ```js
 console.log("Hello, World!");
 ```
+````
 
+````{tab-item} Console
 ```bash
 $ node hello.js
 Hello, World!
 ```
+````
+`````

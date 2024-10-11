@@ -17,18 +17,22 @@ Lua 5.3.6  Copyright (C) 1994-2020 Lua.org, PUC-Rio
 
 ## Example
 
+`````{tab-set}
+````{tab-item} hello.lua
 ```lua
 print("Hello, World!")
 ```
+````
 
-### `lua` Ver.
+````{tab-item} Console
+**`lua` Ver.**
 
 ```bash
 $ lua hello.lua
 Hello, World!
 ```
 
-### `luac` Ver.
+**`luac` Ver.**
 
 ```bash
 $ luac -o hello.luac hello.lua
@@ -36,7 +40,7 @@ $ lua hello.luac
 Hello, World!
 ```
 
-### REPL Ver.
+**REPL Ver.**
 
 ```bash
 $ lua
@@ -44,3 +48,5 @@ Lua 5.3.6  Copyright (C) 1994-2020 Lua.org, PUC-Rio
 > print("Hello, World!")
 Hello, World!
 ```
+````
+`````

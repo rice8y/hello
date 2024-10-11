@@ -27,11 +27,17 @@ Internet, point your browser at http://www.perl.org/, the Perl Home Page.
 
 ## Example
 
+`````{tab-set}
+````{tab-item} hello.pl
 ```pl
 print "Hello, World!\n";
 ```
+````
 
+````{tab-item} Console
 ```bash
 $ perl hello.pl
 Hello, World!
 ```
+````
+`````
