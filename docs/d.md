@@ -26,6 +26,8 @@ Copyright (C) 1999-2024 by The D Language Foundation, All Rights Reserved writte
 
 ## Example
 
+`````{tab-set}
+````{tab-item} hello.d
 ```d
 import std.stdio;
 
@@ -33,9 +35,13 @@ void main() {
     writeln("Hello, World!");
 }
 ```
+````
 
+````{tab-item} Console
 ```bash
 $ dmd hello.d -of=hello
 $ ./hello
 Hello, World!
 ```
+````
+`````

@@ -21,6 +21,8 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 ## Example
 
+`````{tab-set}
+````{tab-item} hello.cpp
 ```cpp
 #include <iostream>
 
@@ -29,9 +31,13 @@ int main(){
     return 0;
 }
 ```
+````
 
+````{tab-item} Console
 ```bash
 $ g++ hello.cpp -o hello
 $ ./hello
 Hello, World!
 ```
+````
+`````
