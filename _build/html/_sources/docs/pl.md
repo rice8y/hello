@@ -27,7 +27,20 @@ Internet, point your browser at http://www.perl.org/, the Perl Home Page.
 
 ## Example
 
-`````{tab-set}
+````{tab} hello.pl
+```pl
+print "Hello, World!\n";
+```
+````
+
+````{tab} Console
+```bash
+$ perl hello.pl
+Hello, World!
+```
+````
+
+<!-- `````{tab-set}
 ````{tab-item} hello.pl
 ```pl
 print "Hello, World!\n";
@@ -40,4 +53,4 @@ $ perl hello.pl
 Hello, World!
 ```
 ````
-`````
+````` -->
