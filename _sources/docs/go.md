@@ -30,14 +30,14 @@ func main() {
 ````
 
 ````{tab-item} Console
-`go run` Ver.
+**`go run` Ver.**
 
 ```bash
 $ go run hello.go
 Hello, World!
 ```
 
-`go build` Ver.
+**`go build` Ver.**
 ```bash
 $ go build hello.go
 $ ./hello
