@@ -10,6 +10,8 @@ $ sudo apt-get install opam
 
 ## Initialise opam
 
+OPAMを初期化する.
+
 ```bash
 $ opam init
 $ eval $(opam env)
@@ -56,3 +58,10 @@ $ ./hello
 Hello, World!
 ```
 ````
+
+```{tip}
+`opam`: OCamlのパッケージマネージャ  
+`ocaml`: Ocamlのインタプリタ  
+`ocamlc`: Ocamlのバイトコードコンパイラ  
+`ocamlopt`: Ocamlのネイティブコードコンパイラ
+```

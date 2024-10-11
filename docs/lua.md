@@ -50,3 +50,8 @@ Lua 5.3.6  Copyright (C) 1994-2020 Lua.org, PUC-Rio
 Hello, World!
 ```
 ````
+
+```{tip}
+`lua`: Luaのインタプリタ  
+`luac`: Luaのコンパイラ
+```
