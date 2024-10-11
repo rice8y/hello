@@ -2,10 +2,9 @@
 
 ## Installation
 
-JavaコンパイラとJava実行環境をインストールする.
+JDKをインストールする.
 
 ```bash
-$ sudo apt install default-jre
 $ sudo apt install default-jdk
 ```
 
@@ -41,3 +40,8 @@ $ java Hello
 Hello, World!
 ```
 ````
+
+```{tip}
+`javac`: Javaのコンパイラ  
+`java`: Java実行環境の一部
+```

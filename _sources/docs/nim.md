@@ -2,9 +2,15 @@
 
 ## Installation
 
+choosenim[^1]を使用してNimをインストールする.
+
 ```bash
 $ curl https://nim-lang.org/choosenim/init.sh -sSf | sh
 ```
+
+## Configuring the PATH environment variable
+
+`/home/tu-nombre-usuario/.nimble/bin`を環境変数に追加する.
 
 ```bash
 $ nano ~/.bashrc
@@ -42,3 +48,5 @@ $ nim c --hints:off --run hello.nim
 Hello, World!
 ```
 ````
+
+[^1]: Nimのパッケージマネージャ.
