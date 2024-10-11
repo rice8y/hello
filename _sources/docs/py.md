@@ -16,7 +16,7 @@ Python 3.10.12
 ## Example
 
 `````{tab-set}
-````{tab-item} Hello.py
+````{tab-item} hello.py
 ```py
 print("Hello, World!")
 ```
