@@ -47,11 +47,15 @@ Compiled with xpdf version 4.04
 
 ### TeX
 
+`````{tab-set}
+````{tab-item} hello.tex
 ```tex
 \immediate\write0{Hello, World!}
 \end
 ```
+````
 
+````{tab-item} Console
 ```bash
 $ luatex --halt-on-error hello.tex
 This is LuaTeX, Version 1.18.0 (TeX Live 2024)
@@ -62,6 +66,8 @@ Hello, World!
 warning  (pdf backend): no pages of output.
 Transcript written on hello.log.
 ```
+````
+`````
 
 ### LaTeX
 
