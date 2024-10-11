@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Java &#8212; Hello, World!</title>
+    <title>x86 GNU Assembler &#8212; Hello, World!</title>
   
   
   
@@ -59,12 +59,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/java';</script>
-    <link rel="canonical" href="https://rice8y.github.io/hello/docs/java.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/s';</script>
+    <link rel="canonical" href="https://rice8y.github.io/hello/docs/s.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="JavaScript" href="js.html" />
-    <link rel="prev" title="C++" href="cpp.html" />
+    <link rel="next" title="TeX/LaTeX" href="tex.html" />
+    <link rel="prev" title="Rust" href="rs.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="unknown"/>
   </head>
@@ -188,7 +188,7 @@
 <li class="toctree-l1"><a class="reference internal" href="f.html">Fortran</a></li>
 <li class="toctree-l1"><a class="reference internal" href="go.html">Go</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cpp.html">C++</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Java</a></li>
+<li class="toctree-l1"><a class="reference internal" href="java.html">Java</a></li>
 <li class="toctree-l1"><a class="reference internal" href="js.html">JavaScript</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lua.html">Lua</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ml.html">OCaml</a></li>
@@ -197,7 +197,7 @@
 <li class="toctree-l1"><a class="reference internal" href="pl.html">Perl</a></li>
 <li class="toctree-l1"><a class="reference internal" href="py.html">Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rs.html">Rust</a></li>
-<li class="toctree-l1"><a class="reference internal" href="s.html">x86 GNU Assembler</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">x86 GNU Assembler</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tex.html">TeX/LaTeX</a></li>
 <li class="toctree-l1"><a class="reference internal" href="zig.html">Zig</a></li>
 </ul>
@@ -271,7 +271,7 @@
       
       
       
-      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/java.md" target="_blank"
+      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/s.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -301,7 +301,7 @@
       
       
       
-      <li><a href="../_sources/docs/java.md" target="_blank"
+      <li><a href="../_sources/docs/s.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -385,7 +385,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Java</h1>
+    <h1>x86 GNU Assembler</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -396,7 +396,6 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#version">Version</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 </ul>
             </nav>
@@ -409,23 +408,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="java">
-<h1>Java<a class="headerlink" href="#java" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="x86-gnu-assembler">
+<h1>x86 GNU Assembler<a class="headerlink" href="#x86-gnu-assembler" title="Link to this heading">#</a></h1>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
-<p>JDKをインストールする.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>default-jdk
-</pre></div>
-</div>
-</section>
-<section id="version">
-<h2>Version<a class="headerlink" href="#version" title="Link to this heading">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>java<span class="w"> </span>--version
-openjdk<span class="w"> </span><span class="m">11</span>.0.24<span class="w"> </span><span class="m">2024</span>-07-16
-OpenJDK<span class="w"> </span>Runtime<span class="w"> </span>Environment<span class="w"> </span><span class="o">(</span>build<span class="w"> </span><span class="m">11</span>.0.24+8-post-Ubuntu-1ubuntu322.04<span class="o">)</span>
-OpenJDK<span class="w"> </span><span class="m">64</span>-Bit<span class="w"> </span>Server<span class="w"> </span>VM<span class="w"> </span><span class="o">(</span>build<span class="w"> </span><span class="m">11</span>.0.24+8-post-Ubuntu-1ubuntu322.04,<span class="w"> </span>mixed<span class="w"> </span>mode,<span class="w"> </span>sharing<span class="o">)</span>
-$<span class="w"> </span>javac<span class="w"> </span>--version
-javac<span class="w"> </span><span class="m">11</span>.0.24
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>binutils
 </pre></div>
 </div>
 </section>
@@ -433,27 +420,36 @@ javac<span class="w"> </span><span class="m">11</span>.0.24
 <h2>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h2>
 <div class="tab-set docutils">
 <input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">Code</label><div class="tab-content docutils">
-<p><code class="docutils literal notranslate"><span class="pre">hello.java</span></code>:</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Hello</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hello, World!&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
+<p><code class="docutils literal notranslate"><span class="pre">hello.s</span></code>:</p>
+<div class="highlight-s notranslate"><div class="highlight"><pre><span></span><span class="n">.intel_syntax</span><span class="w"> </span><span class="n">noprefix</span>
+<span class="n">.global</span><span class="w"> </span>_<span class="n">start</span>
+
+_<span class="n">start</span><span class="o">:</span>
+<span class="w">	</span><span class="n">mov</span><span class="w"> </span><span class="n">rax</span><span class="p">,</span><span class="w"> </span><span class="m">1</span>
+<span class="w">	</span><span class="n">mov</span><span class="w"> </span><span class="n">rdi</span><span class="p">,</span><span class="w"> </span><span class="m">1</span>
+<span class="w">	</span><span class="n">lea</span><span class="w"> </span><span class="n">rsi</span><span class="p">,</span><span class="w"> </span><span class="p">[</span>_<span class="n">hello</span><span class="p">]</span>
+<span class="w">	</span><span class="n">mov</span><span class="w"> </span><span class="n">rdx</span><span class="p">,</span><span class="w"> </span><span class="m">14</span>
+<span class="w">	</span><span class="n">syscall</span>
+
+<span class="w">	</span><span class="n">mov</span><span class="w"> </span><span class="n">rax</span><span class="p">,</span><span class="w"> </span><span class="m">60</span>
+<span class="w">	</span><span class="n">mov</span><span class="w"> </span><span class="n">rdi</span><span class="p">,</span><span class="w"> </span><span class="m">0</span>
+<span class="w">	</span><span class="n">syscall</span>
+
+
+<span class="n">.data</span>
+_<span class="n">hello</span><span class="o">:</span>
+<span class="w">	</span><span class="n">.asciz</span><span class="w"> </span><span class="s">&quot;Hello, World!\n&quot;</span>
 </pre></div>
 </div>
 </div>
 <input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Console</label><div class="tab-content docutils">
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>javac<span class="w"> </span>Hello.java
-$<span class="w"> </span>java<span class="w"> </span>Hello
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>as<span class="w"> </span>-o<span class="w"> </span>hello.o<span class="w"> </span>hello.s
+$<span class="w"> </span>ld<span class="w"> </span>-o<span class="w"> </span>hello<span class="w"> </span>hello.o<span class="w"> </span>
+$<span class="w"> </span>./hello
 Hello,<span class="w"> </span>World!
 </pre></div>
 </div>
 </div>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><code class="docutils literal notranslate"><span class="pre">javac</span></code>: Javaのコンパイラ<br />
-<code class="docutils literal notranslate"><span class="pre">java</span></code>: Java実行環境の一部</p>
 </div>
 </section>
 </section>
@@ -489,20 +485,20 @@ Hello,<span class="w"> </span>World!
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="cpp.html"
+       href="rs.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">C++</p>
+        <p class="prev-next-title">Rust</p>
       </div>
     </a>
     <a class="right-next"
-       href="js.html"
+       href="tex.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">JavaScript</p>
+        <p class="prev-next-title">TeX/LaTeX</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -523,7 +519,6 @@ Hello,<span class="w"> </span>World!
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#version">Version</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 </ul>
   </nav></div>
