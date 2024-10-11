@@ -17,7 +17,7 @@ Python 3.10.12
 
 `````{tab-set}
 ````{tab-item} hello.py
-```py
+```python
 print("Hello, World!")
 ```
 ````
