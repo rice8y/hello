@@ -23,3 +23,7 @@ $ uname -r
 ```{tableofcontents}
 
 ```
+
+## Code
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=rice8y&repo=hello)](https://github.com/rice8y/hello/hello)
