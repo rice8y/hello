@@ -2,6 +2,7 @@ format: jb-article
 root: docs/intro
 sections:
 - file: docs/adb
+- file: docs/bf
 - file: docs/c
 - file: docs/cr
 - file: docs/d
