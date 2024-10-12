@@ -37,7 +37,6 @@
     <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
     <link rel="stylesheet" type="text/css" href="../_static/proof.css?v=b4b7a797" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=8ead1ec5" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
@@ -463,12 +462,45 @@ Hello,<span class="w"> </span>World!
 <p class="admonition-title">Note</p>
 <p><code class="docutils literal notranslate"><span class="pre">hello.mal</span></code>の作成にあたり, <a class="reference external" href="https://github.com/reika727">reika727</a>さんのビーム探索プログラムを使用しました.</p>
 <p><a class="reference external" href="https://github.com/reika727/MalbolgeHelloWorld"><img alt="Readme Card" src="https://github-readme-stats.vercel.app/api/pin/?username=reika727&amp;repo=MalbolgeHelloWorld" /></a></p>
+<p>なお, 出力を&quot;Hello World&quot;から&quot;Hello, World!&quot;に変更するために, <code class="docutils literal notranslate"><span class="pre">main.cpp</span></code>の26行目と41行目を以下のように修正しています.</p>
 <div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gd">- constexpr std::string_view target = &quot;Hello World&quot;;</span>
 <span class="gi">+ constexpr std::string_view target = &quot;Hello, World&quot;;</span>
 </pre></div>
 </div>
 <div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gd">- } else if (output.length() &gt; 0 &amp;&amp; toupper(output.back()) != toupper(target[output.length() - 1])) {</span>
 <span class="gi">+ } else if (output.length() &gt; 0 &amp;&amp; output.back() != target[output.length() - 1]) {</span>
+</pre></div>
+</div>
+<p>実際に, Malbolgeで&quot;Hello, World!&quot;するプログラムを探索すると以下のようになります.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>make<span class="w"> </span><span class="nb">test</span>
+/usr/bin/g++<span class="w"> </span>-Wall<span class="w"> </span>-Wextra<span class="w"> </span>-O3<span class="w"> </span>-mtune<span class="o">=</span>native<span class="w"> </span>-march<span class="o">=</span>native<span class="w"> </span>--std<span class="o">=</span>c++23<span class="w"> </span>-MMD<span class="w"> </span>-MP<span class="w">  </span>-c<span class="w"> </span>-o<span class="w"> </span>main.o<span class="w"> </span>main.cpp
+/usr/bin/g++<span class="w"> </span>-o<span class="w"> </span>malbolge-hello.out<span class="w"> </span>main.o<span class="w"> </span>malbolge.o<span class="w"> </span>malbolge_machine_state.o
+./malbolge-hello.out
+GENERATION<span class="w"> </span><span class="c1">#1</span>
+<span class="w">        </span>GENERATION<span class="w"> </span>SIZE:<span class="w"> </span><span class="m">1</span>
+<span class="w">        </span>BEST<span class="w"> </span>RESULT<span class="w">    </span>:
+<span class="w">        </span>BEST<span class="w"> </span>SCORE<span class="w">     </span>:<span class="w"> </span><span class="m">0</span>
+GENERATION<span class="w"> </span><span class="c1">#2</span>
+<span class="w">        </span>GENERATION<span class="w"> </span>SIZE:<span class="w"> </span><span class="m">8</span>
+<span class="w">        </span>BEST<span class="w"> </span>RESULT<span class="w">    </span>:
+<span class="w">        </span>BEST<span class="w"> </span>SCORE<span class="w">     </span>:<span class="w"> </span>-1
+
+...
+
+GENERATION<span class="w"> </span><span class="c1">#76</span>
+<span class="w">        </span>GENERATION<span class="w"> </span>SIZE:<span class="w"> </span><span class="m">10000</span>
+<span class="w">        </span>BEST<span class="w"> </span>RESULT<span class="w">    </span>:<span class="w"> </span>Hello,<span class="w"> </span>World!
+<span class="w">        </span>BEST<span class="w"> </span>SCORE<span class="w">     </span>:<span class="w"> </span><span class="m">55</span>
+GENERATION<span class="w"> </span><span class="c1">#77</span>
+<span class="w">        </span>GENERATION<span class="w"> </span>SIZE:<span class="w"> </span><span class="m">10000</span>
+<span class="w">        </span>BEST<span class="w"> </span>RESULT<span class="w">    </span>:<span class="w"> </span>Hello,<span class="w"> </span>World!
+
+<span class="w">        </span>BEST<span class="w"> </span>SCORE<span class="w">     </span>:<span class="w"> </span><span class="m">64</span>
+
+<span class="w">        </span>FINAL<span class="w"> </span>RESULT<span class="w">   </span>:<span class="w"> </span>Hello,<span class="w"> </span>World!
+
+<span class="w">        </span>FINAL<span class="w"> </span>SCORE<span class="w">    </span>:<span class="w"> </span><span class="m">64</span>
+<span class="w">        </span>CODE<span class="w">           </span>:<span class="w"> </span><span class="o">(=</span>&lt;<span class="sb">`</span><span class="c1">#9]76ZY327U/.Q210/.-,+*)(&#39;&amp;%$#&quot;!~}|{z(Kw%$t&quot;VqpihmlO+M)g`ed#baDlA]\[Z=XW99Nr5p3Im0FEDhHG)?c=&lt;`##8\}Z:9yVC543210/.-,+*)(&#39;&amp;%$#c!~}v</span>
 </pre></div>
 </div>
 </div>
