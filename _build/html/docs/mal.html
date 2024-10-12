@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>C++ &#8212; Hello, World!</title>
+    <title>Malbolge &#8212; Hello, World!</title>
   
   
   
@@ -60,12 +60,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/cpp';</script>
-    <link rel="canonical" href="https://rice8y.github.io/hello/docs/cpp.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/mal';</script>
+    <link rel="canonical" href="https://rice8y.github.io/hello/docs/mal.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Java" href="java.html" />
-    <link rel="prev" title="Go" href="go.html" />
+    <link rel="next" title="OCaml" href="ml.html" />
+    <link rel="prev" title="Lua" href="lua.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="unknown"/>
   </head>
@@ -189,12 +189,12 @@
 <li class="toctree-l1"><a class="reference internal" href="d.html">D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="f.html">Fortran</a></li>
 <li class="toctree-l1"><a class="reference internal" href="go.html">Go</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cpp.html">C++</a></li>
 <li class="toctree-l1"><a class="reference internal" href="java.html">Java</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jl.html">Julia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="js.html">JavaScript</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lua.html">Lua</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mal.html">Malbolge</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Malbolge</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ml.html">OCaml</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nim.html">Nim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pas.html">Pascal</a></li>
@@ -278,7 +278,7 @@
       
       
       
-      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/cpp.md" target="_blank"
+      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/mal.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -295,7 +295,7 @@
       
       
       
-      <li><a href="https://github.com/rice8y/hello/issues/new?title=Issue%20on%20page%20%2Fdocs/cpp.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/rice8y/hello/issues/new?title=Issue%20on%20page%20%2Fdocs/mal.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -325,7 +325,7 @@
       
       
       
-      <li><a href="../_sources/docs/cpp.md" target="_blank"
+      <li><a href="../_sources/docs/mal.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -409,7 +409,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>C++</h1>
+    <h1>Malbolge</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -420,7 +420,6 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#version">Version</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 </ul>
             </nav>
@@ -433,22 +432,13 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="c">
-<h1>C++<a class="headerlink" href="#c" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="malbolge">
+<h1>Malbolge<a class="headerlink" href="#malbolge" title="Link to this heading">#</a></h1>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">g++</span></code>を使用するために<code class="docutils literal notranslate"><span class="pre">build-essential</span></code>をインストールする.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>build-essential
-</pre></div>
-</div>
-</section>
-<section id="version">
-<h2>Version<a class="headerlink" href="#version" title="Link to this heading">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>g++<span class="w"> </span>--version
-g++<span class="w"> </span><span class="o">(</span>Ubuntu<span class="w"> </span><span class="m">11</span>.4.0-1ubuntu1~22.04<span class="o">)</span><span class="w"> </span><span class="m">11</span>.4.0
-Copyright<span class="w"> </span><span class="o">(</span>C<span class="o">)</span><span class="w"> </span><span class="m">2021</span><span class="w"> </span>Free<span class="w"> </span>Software<span class="w"> </span>Foundation,<span class="w"> </span>Inc.
-This<span class="w"> </span>is<span class="w"> </span>free<span class="w"> </span>software<span class="p">;</span><span class="w"> </span>see<span class="w"> </span>the<span class="w"> </span><span class="nb">source</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>copying<span class="w"> </span>conditions.<span class="w">  </span>There<span class="w"> </span>is<span class="w"> </span>NO
-warranty<span class="p">;</span><span class="w"> </span>not<span class="w"> </span>even<span class="w"> </span><span class="k">for</span><span class="w"> </span>MERCHANTABILITY<span class="w"> </span>or<span class="w"> </span>FITNESS<span class="w"> </span>FOR<span class="w"> </span>A<span class="w"> </span>PARTICULAR<span class="w"> </span>PURPOSE.
+<p><a class="reference internal" href="#view-source:http://www.lscheffer.com/malbolge_interp.html"><span class="xref myst">Malbolgeインタプリタ</span></a>をコンパイルし, 実行ファイルを生成する.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>curl<span class="w"> </span>-s<span class="w"> </span>http://www.lscheffer.com/malbolge_interp.html<span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span>-n<span class="w"> </span><span class="s1">&#39;s/.*&lt;pre&gt;\(.*\)&lt;\/pre&gt;.*/\1/p&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/&lt;br&gt;/\n/g&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/&lt;[^&gt;]*&gt;//g&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/&amp;lt;/&lt;/g; s/&amp;gt;/&gt;/g; s/amp;//g&#39;</span><span class="w"> </span>&gt;<span class="w"> </span>malbolge.c
+$<span class="w"> </span>gcc<span class="w"> </span>-o<span class="w"> </span>malbolge<span class="w"> </span>malbolge.c
 </pre></div>
 </div>
 </section>
@@ -456,22 +446,29 @@ warranty<span class="p">;</span><span class="w"> </span>not<span class="w"> </sp
 <h2>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h2>
 <div class="tab-set docutils">
 <input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">Code</label><div class="tab-content docutils">
-<p><code class="docutils literal notranslate"><span class="pre">hello.cpp</span></code>:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
-
-<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Hello, World!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+<p><code class="docutils literal notranslate"><span class="pre">hello.mal</span></code>:</p>
+<div class="highlight-mal notranslate"><div class="highlight"><pre><span></span>(=&lt;`#9]76ZY327U/.Q210/.-,+*)(&#39;&amp;%$#&quot;!~}|{z(Kw%$t&quot;VqpihmlO+M)g`ed#baDlA]\[Z=XW99Nr5p3Im0FEDhHG)?c=&lt;`##8\}Z:9yVC543210/.-,+*)(&#39;&amp;%$#c!~}v
 </pre></div>
 </div>
 </div>
 <input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Terminal</label><div class="tab-content docutils">
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>g++<span class="w"> </span>hello.cpp<span class="w"> </span>-o<span class="w"> </span>hello
-$<span class="w"> </span>./hello
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>./malbolge<span class="w"> </span>hello.mal
 Hello,<span class="w"> </span>World!
 </pre></div>
 </div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">hello.mal</span></code>の作成にあたり, <a class="reference external" href="https://github.com/reika727">reika727</a>さんのビーム探索プログラムを使用しました.</p>
+<p><a class="reference external" href="https://github.com/reika727/MalbolgeHelloWorld"><img alt="Readme Card" src="https://github-readme-stats.vercel.app/api/pin/?username=reika727&amp;repo=MalbolgeHelloWorld" /></a></p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="w"> </span><span class="k">constexpr</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string_view</span><span class="w"> </span><span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello World&quot;</span><span class="p">;</span>
+<span class="o">+</span><span class="w"> </span><span class="k">constexpr</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string_view</span><span class="w"> </span><span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello, World&quot;</span><span class="p">;</span>
+</pre></div>
+</div>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">output</span><span class="p">.</span><span class="n">length</span><span class="p">()</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">toupper</span><span class="p">(</span><span class="n">output</span><span class="p">.</span><span class="n">back</span><span class="p">())</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">toupper</span><span class="p">(</span><span class="n">target</span><span class="p">[</span><span class="n">output</span><span class="p">.</span><span class="n">length</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]))</span><span class="w"> </span><span class="p">{</span>
+<span class="o">+</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">output</span><span class="p">.</span><span class="n">length</span><span class="p">()</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">output</span><span class="p">.</span><span class="n">back</span><span class="p">()</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">target</span><span class="p">[</span><span class="n">output</span><span class="p">.</span><span class="n">length</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
+</pre></div>
 </div>
 </div>
 </section>
@@ -508,20 +505,20 @@ Hello,<span class="w"> </span>World!
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="go.html"
+       href="lua.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Go</p>
+        <p class="prev-next-title">Lua</p>
       </div>
     </a>
     <a class="right-next"
-       href="java.html"
+       href="ml.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Java</p>
+        <p class="prev-next-title">OCaml</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -542,7 +539,6 @@ Hello,<span class="w"> </span>World!
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#version">Version</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 </ul>
   </nav></div>

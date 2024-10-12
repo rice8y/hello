@@ -23,7 +23,7 @@ const std = @import("std");
 
 pub fn main() !void {
     const stdout = std.io.getStdOut().writer();
-    try stdout.print("Hello, {s}!\n", .{"world"});
+    try stdout.print("Hello, {s}!\n", .{"World"});
 }
 ```
 ````
@@ -32,6 +32,6 @@ pub fn main() !void {
 ```bash
 $ zig build-exe hello.zig
 $ ./hello
-Hello, world!
+Hello, Wrld!
 ```
 ````

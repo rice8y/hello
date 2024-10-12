@@ -1,8 +1,8 @@
-# Brainf*ck
+# Brainfuck
 
 ## Installation
 
-Brainf*ckインタプリタをインストールする.
+Brainfuckインタプリタをインストールする.
 
 ```bash
 $ sudo apt-get install bf

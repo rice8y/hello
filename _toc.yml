@@ -13,6 +13,7 @@ sections:
 - file: docs/jl
 - file: docs/js
 - file: docs/lua
+- file: docs/mal
 - file: docs/ml
 - file: docs/nim
 - file: docs/pas
