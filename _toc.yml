@@ -21,5 +21,6 @@ sections:
 - file: docs/rb
 - file: docs/rs
 - file: docs/s
+- file: docs/scala
 - file: docs/tex
 - file: docs/zig

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>D &#8212; Hello, World!</title>
+    <title>Scala &#8212; Hello, World!</title>
   
   
   
@@ -60,12 +60,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/d';</script>
-    <link rel="canonical" href="https://rice8y.github.io/hello/docs/d.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/scala';</script>
+    <link rel="canonical" href="https://rice8y.github.io/hello/docs/scala.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Fortran" href="f.html" />
-    <link rel="prev" title="Crystal" href="cr.html" />
+    <link rel="next" title="TeX/LaTeX" href="tex.html" />
+    <link rel="prev" title="x86 GNU Assembler" href="s.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="unknown"/>
   </head>
@@ -185,7 +185,7 @@
 <li class="toctree-l1"><a class="reference internal" href="adb.html">Ada</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c.html">C</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cr.html">Crystal</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="d.html">D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="f.html">Fortran</a></li>
 <li class="toctree-l1"><a class="reference internal" href="go.html">Go</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cpp.html">C++</a></li>
@@ -202,7 +202,7 @@
 <li class="toctree-l1"><a class="reference internal" href="rb.html">Ruby</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rs.html">Rust</a></li>
 <li class="toctree-l1"><a class="reference internal" href="s.html">x86 GNU Assembler</a></li>
-<li class="toctree-l1"><a class="reference internal" href="scala.html">Scala</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Scala</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tex.html">TeX/LaTeX</a></li>
 <li class="toctree-l1"><a class="reference internal" href="zig.html">Zig</a></li>
 </ul>
@@ -276,7 +276,7 @@
       
       
       
-      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/d.md" target="_blank"
+      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/scala.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -306,7 +306,7 @@
       
       
       
-      <li><a href="../_sources/docs/d.md" target="_blank"
+      <li><a href="../_sources/docs/scala.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -390,7 +390,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>D</h1>
+    <h1>Scala</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -401,7 +401,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activate">Activate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-the-path-environment-variable">Configuring the PATH environment variable</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#version">Version</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 </ul>
@@ -415,27 +415,30 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="d">
-<h1>D<a class="headerlink" href="#d" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="scala">
+<h1>Scala<a class="headerlink" href="#scala" title="Link to this heading">#</a></h1>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
-<p>Dをインストールする.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>curl<span class="w"> </span>https://dlang.org/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash<span class="w"> </span>-s
+<p>Scalaをインストールする.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>curl<span class="w"> </span>-fL<span class="w"> </span>https://github.com/coursier/coursier/releases/latest/download/cs-x86_64-pc-linux.gz<span class="w"> </span><span class="p">|</span><span class="w"> </span>gzip<span class="w"> </span>-d<span class="w"> </span>&gt;<span class="w"> </span>cs
+$<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>cs<span class="w"> </span>
+$<span class="w"> </span>./cs<span class="w"> </span>setup
 </pre></div>
 </div>
 </section>
-<section id="activate">
-<h2>Activate<a class="headerlink" href="#activate" title="Link to this heading">#</a></h2>
-<p>DMDを起動する.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>~/dlang/dmd-2.109.1/activate
+<section id="configuring-the-path-environment-variable">
+<h2>Configuring the PATH environment variable<a class="headerlink" href="#configuring-the-path-environment-variable" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">$HOME/.local/share/coursier/bin</span></code>を環境変数に追加する.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;export PATH=&quot;$HOME/.local/share/coursier/bin:$PATH&quot;&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bashrc
+$<span class="w"> </span>.<span class="w"> </span>~/.bashrc
 </pre></div>
 </div>
 </section>
 <section id="version">
 <h2>Version<a class="headerlink" href="#version" title="Link to this heading">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>dmd<span class="w"> </span>--version
-DMD64<span class="w"> </span>D<span class="w"> </span>Compiler<span class="w"> </span>v2.109.1
-Copyright<span class="w"> </span><span class="o">(</span>C<span class="o">)</span><span class="w"> </span><span class="m">1999</span>-2024<span class="w"> </span>by<span class="w"> </span>The<span class="w"> </span>D<span class="w"> </span>Language<span class="w"> </span>Foundation,<span class="w"> </span>All<span class="w"> </span>Rights<span class="w"> </span>Reserved<span class="w"> </span>written<span class="w"> </span>by<span class="w"> </span>Walter<span class="w"> </span>Bright
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>scala<span class="w"> </span>--version
+Scala<span class="w"> </span>code<span class="w"> </span>runner<span class="w"> </span>version:<span class="w"> </span><span class="m">1</span>.4.3
+Scala<span class="w"> </span>version<span class="w"> </span><span class="o">(</span>default<span class="o">)</span>:<span class="w"> </span><span class="m">3</span>.5.1
 </pre></div>
 </div>
 </section>
@@ -443,18 +446,29 @@ Copyright<span class="w"> </span><span class="o">(</span>C<span class="o">)</spa
 <h2>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h2>
 <div class="tab-set docutils">
 <input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">Code</label><div class="tab-content docutils">
-<p><code class="docutils literal notranslate"><span class="pre">hello.d</span></code>:</p>
-<div class="highlight-d notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="n">std</span><span class="p">.</span><span class="n">stdio</span><span class="p">;</span>
-
-<span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">writeln</span><span class="p">(</span><span class="s">&quot;Hello, World!&quot;</span><span class="p">);</span>
+<p><code class="docutils literal notranslate"><span class="pre">hello.scala</span></code>:</p>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">object</span><span class="w"> </span><span class="nc">Hello</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">args</span><span class="p">:</span><span class="w"> </span><span class="nc">Array</span><span class="p">[</span><span class="nc">String</span><span class="p">])</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Hello, world!&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 </div>
 <input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Terminal</label><div class="tab-content docutils">
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>dmd<span class="w"> </span>hello.d<span class="w"> </span>-of<span class="o">=</span>hello
-$<span class="w"> </span>./hello
+<p><strong><code class="docutils literal notranslate"><span class="pre">scala</span></code> Ver.</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>scala<span class="w"> </span>run<span class="w"> </span>hello.scala
+Compiling<span class="w"> </span>project<span class="w"> </span><span class="o">(</span>Scala<span class="w"> </span><span class="m">3</span>.5.1,<span class="w"> </span>JVM<span class="w"> </span><span class="o">(</span><span class="m">11</span><span class="o">))</span>
+Compiled<span class="w"> </span>project<span class="w"> </span><span class="o">(</span>Scala<span class="w"> </span><span class="m">3</span>.5.1,<span class="w"> </span>JVM<span class="w"> </span><span class="o">(</span><span class="m">11</span><span class="o">))</span>
+Hello,<span class="w"> </span>World!
+</pre></div>
+</div>
+<p><strong>REPL Ver.</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>scala
+Welcome<span class="w"> </span>to<span class="w"> </span>Scala<span class="w"> </span><span class="m">3</span>.5.1<span class="w"> </span><span class="o">(</span><span class="m">11</span>.0.24,<span class="w"> </span>Java<span class="w"> </span>OpenJDK<span class="w"> </span><span class="m">64</span>-Bit<span class="w"> </span>Server<span class="w"> </span>VM<span class="o">)</span>.
+Type<span class="w"> </span><span class="k">in</span><span class="w"> </span>expressions<span class="w"> </span><span class="k">for</span><span class="w"> </span>evaluation.<span class="w"> </span>Or<span class="w"> </span>try<span class="w"> </span>:help.
+<span class="w">                                                                                                                                     </span>
+scala&gt;<span class="w"> </span>println<span class="o">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="o">)</span>
 Hello,<span class="w"> </span>World!
 </pre></div>
 </div>
@@ -494,20 +508,20 @@ Hello,<span class="w"> </span>World!
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="cr.html"
+       href="s.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Crystal</p>
+        <p class="prev-next-title">x86 GNU Assembler</p>
       </div>
     </a>
     <a class="right-next"
-       href="f.html"
+       href="tex.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Fortran</p>
+        <p class="prev-next-title">TeX/LaTeX</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -528,7 +542,7 @@ Hello,<span class="w"> </span>World!
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activate">Activate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-the-path-environment-variable">Configuring the PATH environment variable</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#version">Version</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 </ul>
