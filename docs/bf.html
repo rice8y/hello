@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Zig &#8212; Hello, World!</title>
+    <title>Brainf*ck &#8212; Hello, World!</title>
   
   
   
@@ -60,11 +60,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/zig';</script>
-    <link rel="canonical" href="https://rice8y.github.io/hello/docs/zig.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/bf';</script>
+    <link rel="canonical" href="https://rice8y.github.io/hello/docs/bf.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="TeX/LaTeX" href="tex.html" />
+    <link rel="next" title="C" href="c.html" />
+    <link rel="prev" title="Ada" href="adb.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="unknown"/>
   </head>
@@ -182,7 +183,7 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="adb.html">Ada</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bf.html">Brainf*ck</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Brainf*ck</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c.html">C</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cr.html">Crystal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="d.html">D</a></li>
@@ -204,7 +205,7 @@
 <li class="toctree-l1"><a class="reference internal" href="s.html">x86 GNU Assembler</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scala.html">Scala</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tex.html">TeX/LaTeX</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Zig</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zig.html">Zig</a></li>
 </ul>
 
     </div>
@@ -276,7 +277,7 @@
       
       
       
-      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/zig.md" target="_blank"
+      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/bf.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -306,7 +307,7 @@
       
       
       
-      <li><a href="../_sources/docs/zig.md" target="_blank"
+      <li><a href="../_sources/docs/bf.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -390,7 +391,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Zig</h1>
+    <h1>Brainf*ck</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -414,18 +415,19 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="zig">
-<h1>Zig<a class="headerlink" href="#zig" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="brainf-ck">
+<h1>Brainf*ck<a class="headerlink" href="#brainf-ck" title="Link to this heading">#</a></h1>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>snap<span class="w"> </span>install<span class="w"> </span>zig<span class="w"> </span>--classic<span class="w"> </span>--beta
+<p>Brainf*ckインタプリタをインストールする.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>bf
 </pre></div>
 </div>
 </section>
 <section id="version">
 <h2>Version<a class="headerlink" href="#version" title="Link to this heading">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>zig<span class="w"> </span>version
-<span class="m">0</span>.13.0
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>bf<span class="w"> </span>-h<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>version
+bf<span class="w"> </span>-<span class="w"> </span>a<span class="w"> </span>Brainfuck<span class="w"> </span>interpreter<span class="w">       </span>version<span class="w"> </span><span class="m">20041219</span>
 </pre></div>
 </div>
 </section>
@@ -433,20 +435,17 @@ document.write(`
 <h2>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h2>
 <div class="tab-set docutils">
 <input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">Code</label><div class="tab-content docutils">
-<p><code class="docutils literal notranslate"><span class="pre">hello.zig</span></code>:</p>
-<div class="highlight-zig notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span><span class="w"> </span><span class="n">std</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">@import</span><span class="p">(</span><span class="s">&quot;std&quot;</span><span class="p">);</span>
-
-<span class="kr">pub</span><span class="w"> </span><span class="k">fn</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="o">!</span><span class="kt">void</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kr">const</span><span class="w"> </span><span class="n">stdout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">getStdOut</span><span class="p">().</span><span class="n">writer</span><span class="p">();</span>
-<span class="w">    </span><span class="k">try</span><span class="w"> </span><span class="n">stdout</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Hello, {s}!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">.{</span><span class="s">&quot;world&quot;</span><span class="p">});</span>
-<span class="p">}</span>
+<p><code class="docutils literal notranslate"><span class="pre">hello.bf</span></code>:</p>
+<div class="highlight-bf notranslate"><div class="highlight"><pre><span></span><span class="nv">&gt;</span><span class="nb">+++++++++</span><span class="k">[</span><span class="nv">&lt;</span><span class="nb">++++++++</span><span class="nv">&gt;</span><span class="nb">-</span><span class="k">]</span><span class="nv">&lt;</span><span class="nt">.</span><span class="nv">&gt;</span><span class="nb">+++++++</span><span class="k">[</span><span class="nv">&lt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">-</span><span class="k">]</span><span class="nv">&lt;</span><span class="nb">+</span><span class="nt">.</span><span class="nb">+++++++</span><span class="nt">..</span>
+<span class="nb">+++</span><span class="nt">.</span><span class="k">[</span><span class="nb">-</span><span class="k">]</span><span class="nv">&gt;</span><span class="nb">+++++++</span><span class="k">[</span><span class="nv">&lt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">-</span><span class="k">]</span><span class="nv">&lt;</span><span class="nb">++</span><span class="nt">.</span><span class="k">[</span><span class="nb">-</span><span class="k">]</span><span class="nv">&gt;</span><span class="nb">++++++++</span><span class="k">[</span><span class="nv">&lt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">-</span><span class="k">]</span><span class="nv">&lt;</span><span class="nt">.</span>
+<span class="nv">&gt;</span><span class="nb">+++++++++++</span><span class="k">[</span><span class="nv">&lt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">-</span><span class="k">]</span><span class="nv">&lt;</span><span class="nt">.</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="k">[</span><span class="nv">&lt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">-</span><span class="k">]</span><span class="nv">&lt;</span><span class="nt">.</span><span class="nb">+++</span><span class="nt">.</span><span class="nb">------</span><span class="nt">.</span>
+<span class="nb">--------</span><span class="nt">.</span><span class="k">[</span><span class="nb">-</span><span class="k">]</span><span class="nv">&gt;</span><span class="nb">++++++++</span><span class="k">[</span><span class="nv">&lt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">-</span><span class="k">]</span><span class="nv">&lt;</span><span class="nb">+</span><span class="nt">.</span><span class="k">[</span><span class="nb">-</span><span class="k">]</span><span class="nb">++++++++++</span><span class="nt">.</span>
 </pre></div>
 </div>
 </div>
 <input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Terminal</label><div class="tab-content docutils">
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>zig<span class="w"> </span>build-exe<span class="w"> </span>hello.zig
-$<span class="w"> </span>./hello
-Hello,<span class="w"> </span>world!
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>bf<span class="w"> </span>hello.bf
+Hello,<span class="w"> </span>World!
 </pre></div>
 </div>
 </div>
@@ -485,13 +484,22 @@ Hello,<span class="w"> </span>world!
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="tex.html"
+       href="adb.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">TeX/LaTeX</p>
+        <p class="prev-next-title">Ada</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="c.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">C</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
