@@ -1,28 +1,30 @@
 format: jb-article
 root: docs/intro
 sections:
-- file: docs/adb
-- file: docs/bf
-- file: docs/c
-- file: docs/cr
-- file: docs/d
-- file: docs/f
-- file: docs/go
-- file: docs/cpp
-- file: docs/java
-- file: docs/jl
-- file: docs/js
-- file: docs/lua
-- file: docs/mal
-- file: docs/ml
-- file: docs/nim
-- file: docs/pas
-- file: docs/php
-- file: docs/pl
-- file: docs/py
-- file: docs/rb
-- file: docs/rs
-- file: docs/s
-- file: docs/scala
-- file: docs/tex
-- file: docs/zig
+- file: docs/toc.md
+  sections:
+  - file: docs/adb
+  - file: docs/bf
+  - file: docs/c
+  - file: docs/cr
+  - file: docs/d
+  - file: docs/f
+  - file: docs/go
+  - file: docs/cpp
+  - file: docs/java
+  - file: docs/jl
+  - file: docs/js
+  - file: docs/lua
+  - file: docs/mal
+  - file: docs/ml
+  - file: docs/nim
+  - file: docs/pas
+  - file: docs/php
+  - file: docs/pl
+  - file: docs/py
+  - file: docs/rb
+  - file: docs/rs
+  - file: docs/s
+  - file: docs/scala
+  - file: docs/tex
+  - file: docs/zig
