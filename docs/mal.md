@@ -31,12 +31,12 @@ Hello, World!
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=reika727&repo=MalbolgeHelloWorld)](https://github.com/reika727/MalbolgeHelloWorld)
 
-```cpp
+```diff
 - constexpr std::string_view target = "Hello World";
 + constexpr std::string_view target = "Hello, World";
 ```
 
-```cpp
+```diff
 - } else if (output.length() > 0 && toupper(output.back()) != toupper(target[output.length() - 1])) {
 + } else if (output.length() > 0 && output.back() != target[output.length() - 1]) {
 ```

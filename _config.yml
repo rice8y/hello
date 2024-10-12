@@ -25,7 +25,11 @@ html:
   use_repository_button     : true  
   use_issues_button         : true  
   home_page_in_navbar       : true
-  extra_navbar              : Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+  extra_navbar              : |
+        <div>
+        Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+        </div>
+        
   baseurl                   : https://rice8y.github.io/hello/
   extra_footer: |
         <div>
