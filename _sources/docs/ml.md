@@ -61,7 +61,7 @@ Hello, World!
 
 ```{tip}
 `opam`: OCamlのパッケージマネージャ  
-`ocaml`: Ocamlのインタプリタ  
-`ocamlc`: Ocamlのバイトコードコンパイラ  
-`ocamlopt`: Ocamlのネイティブコードコンパイラ
+`ocaml`: OCamlのインタプリタ  
+`ocamlc`: OCamlのバイトコードコンパイラ  
+`ocamlopt`: OCamlのネイティブコードコンパイラ
 ```
