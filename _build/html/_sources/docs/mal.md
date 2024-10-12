@@ -35,7 +35,7 @@ Hello, World!
 
 ```diff
 - constexpr std::string_view target = "Hello World";
-+ constexpr std::string_view target = "Hello, World";
++ constexpr std::string_view target = "Hello, World!";
 ```
 
 ```diff
