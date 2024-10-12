@@ -31,7 +31,7 @@ end program hello
 ```
 ````
 
-````{tab} Console
+````{tab} Terminal
 ```bash
 $ gfortran hello.f90 -o hello
 $ ./hello

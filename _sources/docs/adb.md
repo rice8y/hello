@@ -34,7 +34,7 @@ end Hello;
 ```
 ````
 
-````{tab} Console
+````{tab} Terminal
 ```bash
 $ gnat make hello.adb
 x86_64-linux-gnu-gcc-10 -c hello.adb

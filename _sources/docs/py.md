@@ -23,7 +23,7 @@ print("Hello, World!")
 ```
 ````
 
-````{tab} Console
+````{tab} Terminal
 **`python3` Ver.**
 
 ```bash

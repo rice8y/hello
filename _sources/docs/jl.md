@@ -33,7 +33,7 @@ println("Hello, World!")
 ```
 ````
 
-````{tab} Console
+````{tab} Terminal
 **`julia` Ver.**
 
 ```bash

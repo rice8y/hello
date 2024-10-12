@@ -25,7 +25,7 @@ print("Hello, World!")
 ```
 ````
 
-````{tab} Console
+````{tab} Terminal
 **`lua` Ver.**
 
 ```bash

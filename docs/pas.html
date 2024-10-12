@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>x86 GNU Assembler &#8212; Hello, World!</title>
+    <title>Pascal &#8212; Hello, World!</title>
   
   
   
@@ -60,12 +60,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/s';</script>
-    <link rel="canonical" href="https://rice8y.github.io/hello/docs/s.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/pas';</script>
+    <link rel="canonical" href="https://rice8y.github.io/hello/docs/pas.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="TeX/LaTeX" href="tex.html" />
-    <link rel="prev" title="Rust" href="rs.html" />
+    <link rel="next" title="PHP" href="php.html" />
+    <link rel="prev" title="Nim" href="nim.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="unknown"/>
   </head>
@@ -195,13 +195,13 @@
 <li class="toctree-l1"><a class="reference internal" href="lua.html">Lua</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ml.html">OCaml</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nim.html">Nim</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pas.html">Pascal</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Pascal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="php.html">PHP</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pl.html">Perl</a></li>
 <li class="toctree-l1"><a class="reference internal" href="py.html">Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rb.html">Ruby</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rs.html">Rust</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">x86 GNU Assembler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s.html">x86 GNU Assembler</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tex.html">TeX/LaTeX</a></li>
 <li class="toctree-l1"><a class="reference internal" href="zig.html">Zig</a></li>
 </ul>
@@ -275,7 +275,7 @@
       
       
       
-      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/s.md" target="_blank"
+      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/pas.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -305,7 +305,7 @@
       
       
       
-      <li><a href="../_sources/docs/s.md" target="_blank"
+      <li><a href="../_sources/docs/pas.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -389,7 +389,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>x86 GNU Assembler</h1>
+    <h1>Pascal</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -413,29 +413,19 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="x86-gnu-assembler">
-<h1>x86 GNU Assembler<a class="headerlink" href="#x86-gnu-assembler" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="pascal">
+<h1>Pascal<a class="headerlink" href="#pascal" title="Link to this heading">#</a></h1>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>binutils
+<p>PascalコンパイラであるFPCをインストールする.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>fpc
 </pre></div>
 </div>
 </section>
 <section id="version">
 <h2>Version<a class="headerlink" href="#version" title="Link to this heading">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>as<span class="w"> </span>--version
-GNU<span class="w"> </span>assembler<span class="w"> </span><span class="o">(</span>GNU<span class="w"> </span>Binutils<span class="w"> </span><span class="k">for</span><span class="w"> </span>Ubuntu<span class="o">)</span><span class="w"> </span><span class="m">2</span>.38
-Copyright<span class="w"> </span><span class="o">(</span>C<span class="o">)</span><span class="w"> </span><span class="m">2022</span><span class="w"> </span>Free<span class="w"> </span>Software<span class="w"> </span>Foundation,<span class="w"> </span>Inc.
-This<span class="w"> </span>program<span class="w"> </span>is<span class="w"> </span>free<span class="w"> </span>software<span class="p">;</span><span class="w"> </span>you<span class="w"> </span>may<span class="w"> </span>redistribute<span class="w"> </span>it<span class="w"> </span>under<span class="w"> </span>the<span class="w"> </span>terms<span class="w"> </span>of
-the<span class="w"> </span>GNU<span class="w"> </span>General<span class="w"> </span>Public<span class="w"> </span>License<span class="w"> </span>version<span class="w"> </span><span class="m">3</span><span class="w"> </span>or<span class="w"> </span>later.
-This<span class="w"> </span>program<span class="w"> </span>has<span class="w"> </span>absolutely<span class="w"> </span>no<span class="w"> </span>warranty.
-This<span class="w"> </span>assembler<span class="w"> </span>was<span class="w"> </span>configured<span class="w"> </span><span class="k">for</span><span class="w"> </span>a<span class="w"> </span>target<span class="w"> </span>of<span class="w"> </span><span class="sb">`</span>x86_64-linux-gnu<span class="err">&#39;</span>.
-$<span class="w"> </span>ld<span class="w"> </span>--version
-GNU<span class="w"> </span>ld<span class="w"> </span><span class="o">(</span>GNU<span class="w"> </span>Binutils<span class="w"> </span><span class="k">for</span><span class="w"> </span>Ubuntu<span class="o">)</span><span class="w"> </span><span class="m">2</span>.38
-Copyright<span class="w"> </span><span class="o">(</span>C<span class="o">)</span><span class="w"> </span><span class="m">2022</span><span class="w"> </span>Free<span class="w"> </span>Software<span class="w"> </span>Foundation,<span class="w"> </span>Inc.
-This<span class="w"> </span>program<span class="w"> </span>is<span class="w"> </span>free<span class="w"> </span>software<span class="p">;</span><span class="w"> </span>you<span class="w"> </span>may<span class="w"> </span>redistribute<span class="w"> </span>it<span class="w"> </span>under<span class="w"> </span>the<span class="w"> </span>terms<span class="w"> </span>of
-the<span class="w"> </span>GNU<span class="w"> </span>General<span class="w"> </span>Public<span class="w"> </span>License<span class="w"> </span>version<span class="w"> </span><span class="m">3</span><span class="w"> </span>or<span class="w"> </span><span class="o">(</span>at<span class="w"> </span>your<span class="w"> </span>option<span class="o">)</span><span class="w"> </span>a<span class="w"> </span>later<span class="w"> </span>version.
-This<span class="w"> </span>program<span class="w"> </span>has<span class="w"> </span>absolutely<span class="w"> </span>no<span class="w"> </span>warranty.
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>fpc<span class="w"> </span>-iV
+<span class="m">3</span>.2.2
 </pre></div>
 </div>
 </section>
@@ -443,31 +433,22 @@ This<span class="w"> </span>program<span class="w"> </span>has<span class="w"> <
 <h2>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h2>
 <div class="tab-set docutils">
 <input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">Code</label><div class="tab-content docutils">
-<p><code class="docutils literal notranslate"><span class="pre">hello.s</span></code>:</p>
-<div class="highlight-s notranslate"><div class="highlight"><pre><span></span><span class="n">.intel_syntax</span><span class="w"> </span><span class="n">noprefix</span>
-<span class="n">.global</span><span class="w"> </span>_<span class="n">start</span>
-
-_<span class="n">start</span><span class="o">:</span>
-<span class="w">	</span><span class="n">mov</span><span class="w"> </span><span class="n">rax</span><span class="p">,</span><span class="w"> </span><span class="m">1</span>
-<span class="w">	</span><span class="n">mov</span><span class="w"> </span><span class="n">rdi</span><span class="p">,</span><span class="w"> </span><span class="m">1</span>
-<span class="w">	</span><span class="n">lea</span><span class="w"> </span><span class="n">rsi</span><span class="p">,</span><span class="w"> </span><span class="p">[</span>_<span class="n">hello</span><span class="p">]</span>
-<span class="w">	</span><span class="n">mov</span><span class="w"> </span><span class="n">rdx</span><span class="p">,</span><span class="w"> </span><span class="m">14</span>
-<span class="w">	</span><span class="n">syscall</span>
-
-<span class="w">	</span><span class="n">mov</span><span class="w"> </span><span class="n">rax</span><span class="p">,</span><span class="w"> </span><span class="m">60</span>
-<span class="w">	</span><span class="n">mov</span><span class="w"> </span><span class="n">rdi</span><span class="p">,</span><span class="w"> </span><span class="m">0</span>
-<span class="w">	</span><span class="n">syscall</span>
-
-
-<span class="n">.data</span>
-_<span class="n">hello</span><span class="o">:</span>
-<span class="w">	</span><span class="n">.asciz</span><span class="w"> </span><span class="s">&quot;Hello, World!\n&quot;</span>
+<p><code class="docutils literal notranslate"><span class="pre">hello.pas</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>program<span class="w"> </span>Hello<span class="p">;</span>
+begin
+<span class="w">  </span>writeln<span class="o">(</span><span class="s1">&#39;Hello, World!&#39;</span><span class="o">)</span><span class="p">;</span>
+end.
 </pre></div>
 </div>
 </div>
 <input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Terminal</label><div class="tab-content docutils">
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>as<span class="w"> </span>-o<span class="w"> </span>hello.o<span class="w"> </span>hello.s
-$<span class="w"> </span>ld<span class="w"> </span>-o<span class="w"> </span>hello<span class="w"> </span>hello.o<span class="w"> </span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>fpc<span class="w"> </span>hello.pas
+Free<span class="w"> </span>Pascal<span class="w"> </span>Compiler<span class="w"> </span>version<span class="w"> </span><span class="m">3</span>.2.2+dfsg-9ubuntu1<span class="w"> </span><span class="o">[</span><span class="m">2022</span>/04/11<span class="o">]</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>x86_64
+Copyright<span class="w"> </span><span class="o">(</span>c<span class="o">)</span><span class="w"> </span><span class="m">1993</span>-2021<span class="w"> </span>by<span class="w"> </span>Florian<span class="w"> </span>Klaempfl<span class="w"> </span>and<span class="w"> </span>others
+Target<span class="w"> </span>OS:<span class="w"> </span>Linux<span class="w"> </span><span class="k">for</span><span class="w"> </span>x86-64
+Compiling<span class="w"> </span>hello.pas
+Linking<span class="w"> </span>hello
+<span class="m">3</span><span class="w"> </span>lines<span class="w"> </span>compiled,<span class="w"> </span><span class="m">0</span>.1<span class="w"> </span>sec
 $<span class="w"> </span>./hello
 Hello,<span class="w"> </span>World!
 </pre></div>
@@ -508,20 +489,20 @@ Hello,<span class="w"> </span>World!
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rs.html"
+       href="nim.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Rust</p>
+        <p class="prev-next-title">Nim</p>
       </div>
     </a>
     <a class="right-next"
-       href="tex.html"
+       href="php.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">TeX/LaTeX</p>
+        <p class="prev-next-title">PHP</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

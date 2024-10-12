@@ -25,7 +25,7 @@ console.log("Hello, World!");
 ```
 ````
 
-````{tab} Console
+````{tab} Terminal
 ```bash
 $ node hello.js
 Hello, World!

@@ -28,7 +28,7 @@ puts "Hello, World!"
 ```
 ````
 
-````{tab} Console
+````{tab} Terminal
 ```bash
 $ crystal hello.cr
 Hello, World!

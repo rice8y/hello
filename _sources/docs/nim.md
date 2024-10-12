@@ -42,7 +42,7 @@ echo "Hello, World!"
 ```
 ````
 
-````{tab} Console
+````{tab} Terminal
 ```bash
 $ nim c --hints:off --run hello.nim
 Hello, World!

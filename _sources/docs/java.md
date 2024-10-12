@@ -33,7 +33,7 @@ public class Hello {
 ```
 ````
 
-````{tab} Console
+````{tab} Terminal
 ```bash
 $ javac Hello.java
 $ java Hello
