@@ -34,7 +34,7 @@ print_endline "Hello, World!"
 ```
 ````
 
-````{tab} Console
+````{tab} Terminal
 **`ocaml` Ver.**
 
 ```bash

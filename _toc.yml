@@ -14,9 +14,11 @@ sections:
 - file: docs/lua
 - file: docs/ml
 - file: docs/nim
+- file: docs/pas
 - file: docs/php
 - file: docs/pl
 - file: docs/py
+- file: docs/rb
 - file: docs/rs
 - file: docs/s
 - file: docs/tex

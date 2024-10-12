@@ -34,7 +34,7 @@ int main() {
 ```
 ````
 
-````{tab} Console
+````{tab} Terminal
 ```bash
 $ gcc hello.c -o hello
 $ ./hello

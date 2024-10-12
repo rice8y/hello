@@ -28,7 +28,7 @@ pub fn main() !void {
 ```
 ````
 
-````{tab} Console
+````{tab} Terminal
 ```bash
 $ zig build-exe hello.zig
 $ ./hello

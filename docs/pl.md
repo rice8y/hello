@@ -35,7 +35,7 @@ print "Hello, World!\n";
 ```
 ````
 
-````{tab} Console
+````{tab} Terminal
 ```bash
 $ perl hello.pl
 Hello, World!

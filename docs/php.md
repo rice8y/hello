@@ -28,7 +28,7 @@ echo "Hello, World!\n";
 ```
 ````
 
-````{tab} Console
+````{tab} Terminal
 ```bash
 $ php hello.php
 Hello, World!

@@ -60,7 +60,7 @@ Compiled with xpdf version 4.04
 ```
 ````
 
-````{tab} Console
+````{tab} Terminal
 ```bash
 $ luatex --halt-on-error hello.tex
 This is LuaTeX, Version 1.18.0 (TeX Live 2024)
@@ -86,7 +86,7 @@ Transcript written on hello.log.
 ```
 ````
 
-````{tab} Console
+````{tab} Terminal
 ```bash
 $ lualatex hello.tex
 This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)

@@ -38,7 +38,7 @@ void main() {
 ```
 ````
 
-````{tab} Console
+````{tab} Terminal
 ```bash
 $ dmd hello.d -of=hello
 $ ./hello

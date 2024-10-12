@@ -52,7 +52,7 @@ _hello:
 ```
 ````
 
-````{tab} Console
+````{tab} Terminal
 ```bash
 $ as -o hello.o hello.s
 $ ld -o hello hello.o 

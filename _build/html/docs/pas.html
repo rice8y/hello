@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>JavaScript &#8212; Hello, World!</title>
+    <title>Pascal &#8212; Hello, World!</title>
   
   
   
@@ -60,12 +60,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/js';</script>
-    <link rel="canonical" href="https://rice8y.github.io/hello/docs/js.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/pas';</script>
+    <link rel="canonical" href="https://rice8y.github.io/hello/docs/pas.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Lua" href="lua.html" />
-    <link rel="prev" title="Julia" href="jl.html" />
+    <link rel="next" title="PHP" href="php.html" />
+    <link rel="prev" title="Nim" href="nim.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="unknown"/>
   </head>
@@ -191,11 +191,11 @@
 <li class="toctree-l1"><a class="reference internal" href="cpp.html">C++</a></li>
 <li class="toctree-l1"><a class="reference internal" href="java.html">Java</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jl.html">Julia</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="js.html">JavaScript</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lua.html">Lua</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ml.html">OCaml</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nim.html">Nim</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pas.html">Pascal</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Pascal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="php.html">PHP</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pl.html">Perl</a></li>
 <li class="toctree-l1"><a class="reference internal" href="py.html">Python</a></li>
@@ -275,7 +275,7 @@
       
       
       
-      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/js.md" target="_blank"
+      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/pas.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -305,7 +305,7 @@
       
       
       
-      <li><a href="../_sources/docs/js.md" target="_blank"
+      <li><a href="../_sources/docs/pas.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -389,7 +389,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>JavaScript</h1>
+    <h1>Pascal</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -413,19 +413,19 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="javascript">
-<h1>JavaScript<a class="headerlink" href="#javascript" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="pascal">
+<h1>Pascal<a class="headerlink" href="#pascal" title="Link to this heading">#</a></h1>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
-<p>JavaScript実行環境(Node.js)をインストールする.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>nodejs
+<p>PascalコンパイラであるFPCをインストールする.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>fpc
 </pre></div>
 </div>
 </section>
 <section id="version">
 <h2>Version<a class="headerlink" href="#version" title="Link to this heading">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>node<span class="w"> </span>--version
-v22.2.0
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>fpc<span class="w"> </span>-iV
+<span class="m">3</span>.2.2
 </pre></div>
 </div>
 </section>
@@ -433,13 +433,23 @@ v22.2.0
 <h2>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h2>
 <div class="tab-set docutils">
 <input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">Code</label><div class="tab-content docutils">
-<p><code class="docutils literal notranslate"><span class="pre">hello.js</span></code>:</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">);</span>
+<p><code class="docutils literal notranslate"><span class="pre">hello.pas</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>program<span class="w"> </span>Hello<span class="p">;</span>
+begin
+<span class="w">  </span>writeln<span class="o">(</span><span class="s1">&#39;Hello, World!&#39;</span><span class="o">)</span><span class="p">;</span>
+end.
 </pre></div>
 </div>
 </div>
 <input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Terminal</label><div class="tab-content docutils">
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>node<span class="w"> </span>hello.js
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>fpc<span class="w"> </span>hello.pas
+Free<span class="w"> </span>Pascal<span class="w"> </span>Compiler<span class="w"> </span>version<span class="w"> </span><span class="m">3</span>.2.2+dfsg-9ubuntu1<span class="w"> </span><span class="o">[</span><span class="m">2022</span>/04/11<span class="o">]</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>x86_64
+Copyright<span class="w"> </span><span class="o">(</span>c<span class="o">)</span><span class="w"> </span><span class="m">1993</span>-2021<span class="w"> </span>by<span class="w"> </span>Florian<span class="w"> </span>Klaempfl<span class="w"> </span>and<span class="w"> </span>others
+Target<span class="w"> </span>OS:<span class="w"> </span>Linux<span class="w"> </span><span class="k">for</span><span class="w"> </span>x86-64
+Compiling<span class="w"> </span>hello.pas
+Linking<span class="w"> </span>hello
+<span class="m">3</span><span class="w"> </span>lines<span class="w"> </span>compiled,<span class="w"> </span><span class="m">0</span>.1<span class="w"> </span>sec
+$<span class="w"> </span>./hello
 Hello,<span class="w"> </span>World!
 </pre></div>
 </div>
@@ -479,20 +489,20 @@ Hello,<span class="w"> </span>World!
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="jl.html"
+       href="nim.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Julia</p>
+        <p class="prev-next-title">Nim</p>
       </div>
     </a>
     <a class="right-next"
-       href="lua.html"
+       href="php.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lua</p>
+        <p class="prev-next-title">PHP</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

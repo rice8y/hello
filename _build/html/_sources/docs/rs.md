@@ -35,7 +35,7 @@ fn main() {
 ```
 ````
 
-````{tab} Console
+````{tab} Terminal
 ```bash
 $ rustc hello.rs
 $ ./hello

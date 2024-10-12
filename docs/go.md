@@ -30,7 +30,7 @@ func main() {
 ```
 ````
 
-````{tab} Console
+````{tab} Terminal
 **`go run` Ver.**
 
 ```bash
