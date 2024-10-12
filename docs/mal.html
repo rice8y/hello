@@ -464,7 +464,7 @@ Hello,<span class="w"> </span>World!
 <p><a class="reference external" href="https://github.com/reika727/MalbolgeHelloWorld"><img alt="Readme Card" src="https://github-readme-stats.vercel.app/api/pin/?username=reika727&amp;repo=MalbolgeHelloWorld" /></a></p>
 <p>なお, 出力を&quot;Hello World&quot;から&quot;Hello, World!&quot;に変更するために, <code class="docutils literal notranslate"><span class="pre">main.cpp</span></code>の26行目と41行目を以下のように修正しています.</p>
 <div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gd">- constexpr std::string_view target = &quot;Hello World&quot;;</span>
-<span class="gi">+ constexpr std::string_view target = &quot;Hello, World&quot;;</span>
+<span class="gi">+ constexpr std::string_view target = &quot;Hello, World!&quot;;</span>
 </pre></div>
 </div>
 <div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gd">- } else if (output.length() &gt; 0 &amp;&amp; toupper(output.back()) != toupper(target[output.length() - 1])) {</span>
