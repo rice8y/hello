@@ -11,7 +11,7 @@ $ git clone https://github.com/indaplusplus/hermanka-binaryfuck.git
 インタプリタをコンパイルし実行ファイルを生成する.
 
 ```bash
-$ cd hermanka-binaryfuck/Interpreter$
+$ cd hermanka-binaryfuck/Interpreter
 $ g++ -o binaryfuck main.cpp
 ```
 
