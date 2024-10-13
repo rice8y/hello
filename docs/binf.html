@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Malbolge &#8212; Hello, World!</title>
+    <title>Binaryfuck &#8212; Hello, World!</title>
   
   
   
@@ -60,12 +60,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/mal';</script>
-    <link rel="canonical" href="https://rice8y.github.io/hello/docs/mal.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/binf';</script>
+    <link rel="canonical" href="https://rice8y.github.io/hello/docs/binf.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="OCaml" href="ml.html" />
-    <link rel="prev" title="Lua" href="lua.html" />
+    <link rel="next" title="C" href="c.html" />
+    <link rel="prev" title="Brainfuck" href="bf.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="unknown"/>
   </head>
@@ -185,7 +185,7 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="toc.html">TOC</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="adb.html">Ada</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bf.html">Brainfuck</a></li>
-<li class="toctree-l2"><a class="reference internal" href="binf.html">Binaryfuck</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Binaryfuck</a></li>
 <li class="toctree-l2"><a class="reference internal" href="c.html">C</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cr.html">Crystal</a></li>
 <li class="toctree-l2"><a class="reference internal" href="d.html">D</a></li>
@@ -196,7 +196,7 @@
 <li class="toctree-l2"><a class="reference internal" href="jl.html">Julia</a></li>
 <li class="toctree-l2"><a class="reference internal" href="js.html">JavaScript</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lua.html">Lua</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Malbolge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mal.html">Malbolge</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ml.html">OCaml</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nim.html">Nim</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pas.html">Pascal</a></li>
@@ -282,7 +282,7 @@
       
       
       
-      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/mal.md" target="_blank"
+      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/binf.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -299,7 +299,7 @@
       
       
       
-      <li><a href="https://github.com/rice8y/hello/issues/new?title=Issue%20on%20page%20%2Fdocs/mal.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/rice8y/hello/issues/new?title=Issue%20on%20page%20%2Fdocs/binf.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -329,7 +329,7 @@
       
       
       
-      <li><a href="../_sources/docs/mal.md" target="_blank"
+      <li><a href="../_sources/docs/binf.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -413,7 +413,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Malbolge</h1>
+    <h1>Binaryfuck</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -436,13 +436,17 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="malbolge">
-<h1>Malbolge<a class="headerlink" href="#malbolge" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="binaryfuck">
+<h1>Binaryfuck<a class="headerlink" href="#binaryfuck" title="Link to this heading">#</a></h1>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
-<p><a class="reference internal" href="#view-source:http://www.lscheffer.com/malbolge_interp.html"><span class="xref myst">Malbolgeインタプリタ</span></a>をコンパイルし, 実行ファイルを生成する.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>curl<span class="w"> </span>-s<span class="w"> </span>http://www.lscheffer.com/malbolge_interp.html<span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span>-n<span class="w"> </span><span class="s1">&#39;s/.*&lt;pre&gt;\(.*\)&lt;\/pre&gt;.*/\1/p&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/&lt;br&gt;/\n/g&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/&lt;[^&gt;]*&gt;//g&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/&amp;lt;/&lt;/g; s/&amp;gt;/&gt;/g; s/amp;//g&#39;</span><span class="w"> </span>&gt;<span class="w"> </span>malbolge.c
-$<span class="w"> </span>gcc<span class="w"> </span>-o<span class="w"> </span>malbolge<span class="w"> </span>malbolge.c
+<p>Binaryfuckインタプリタをインストールする.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/indaplusplus/hermanka-binaryfuck.git
+</pre></div>
+</div>
+<p>インタプリタをコンパイルし実行ファイルを生成する.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>hermanka-binaryfuck/Interpreter$
+$<span class="w"> </span>g++<span class="w"> </span>-o<span class="w"> </span>binaryfuck<span class="w"> </span>main.cpp
 </pre></div>
 </div>
 </section>
@@ -450,62 +454,18 @@ $<span class="w"> </span>gcc<span class="w"> </span>-o<span class="w"> </span>ma
 <h2>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h2>
 <div class="tab-set docutils">
 <input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">Code</label><div class="tab-content docutils">
-<p><code class="docutils literal notranslate"><span class="pre">hello.mal</span></code>:</p>
-<div class="highlight-mal notranslate"><div class="highlight"><pre><span></span>(=&lt;`#9]76ZY327U/.Q210/.-,+*)(&#39;&amp;%$#&quot;!~}|{z(Kw%$t&quot;VqpihmlO+M)g`ed#baDlA]\[Z=XW99Nr5p3Im0FEDhHG)?c=&lt;`##8\}Z:9yVC543210/.-,+*)(&#39;&amp;%$#c!~}v
+<p><code class="docutils literal notranslate"><span class="pre">hello_bin.bf</span></code></p>
+<div class="highlight-bf notranslate"><div class="highlight"><pre><span></span><span class="c">1010000000000000000000000000000110011000000000000000000000000010001111011100010000000000000000000000110011000000000000010001111011000100000000000000000000000100100000000000100110001111010000000000000000000000</span>
+<span class="c">1100110000000000000000000100011110110000001001100011110100000000000000000000000001100110000000000000100011110111000100000000000000000000000000000000001100110000000000000000100011110111000100000000000000000001</span>
+<span class="c">10011000000000000010001111011100000000000100001001001001001001100001001001001001001001001100110001111010000000000000000000000000110011000000000000010001111011000100110001111000000000000000000000000000000100</span>
 </pre></div>
 </div>
 </div>
 <input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Terminal</label><div class="tab-content docutils">
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>./malbolge<span class="w"> </span>hello.mal
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>./binaryfuck<span class="w"> </span>hello_bin.bf
 Hello,<span class="w"> </span>World!
 </pre></div>
 </div>
-</div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><code class="docutils literal notranslate"><span class="pre">hello.mal</span></code>の作成にあたり, <a class="reference external" href="https://github.com/reika727">reika727</a>さんのビーム探索プログラムを使用しました.</p>
-<p><a class="reference external" href="https://github.com/reika727/MalbolgeHelloWorld"><img alt="Readme Card" src="https://github-readme-stats.vercel.app/api/pin/?username=reika727&amp;repo=MalbolgeHelloWorld" /></a></p>
-<p>なお, 出力を&quot;Hello World&quot;から&quot;Hello, World!&quot;に変更するために, <code class="docutils literal notranslate"><span class="pre">main.cpp</span></code>の26行目と41行目を以下のように修正しています.</p>
-<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gd">- constexpr std::string_view target = &quot;Hello World&quot;;</span>
-<span class="gi">+ constexpr std::string_view target = &quot;Hello, World!&quot;;</span>
-</pre></div>
-</div>
-<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gd">- } else if (output.length() &gt; 0 &amp;&amp; toupper(output.back()) != toupper(target[output.length() - 1])) {</span>
-<span class="gi">+ } else if (output.length() &gt; 0 &amp;&amp; output.back() != target[output.length() - 1]) {</span>
-</pre></div>
-</div>
-<p>実際に, Malbolgeで&quot;Hello, World!&quot;するプログラムを探索すると以下のようになります.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>make<span class="w"> </span><span class="nb">test</span>
-/usr/bin/g++<span class="w"> </span>-Wall<span class="w"> </span>-Wextra<span class="w"> </span>-O3<span class="w"> </span>-mtune<span class="o">=</span>native<span class="w"> </span>-march<span class="o">=</span>native<span class="w"> </span>--std<span class="o">=</span>c++23<span class="w"> </span>-MMD<span class="w"> </span>-MP<span class="w">  </span>-c<span class="w"> </span>-o<span class="w"> </span>main.o<span class="w"> </span>main.cpp
-/usr/bin/g++<span class="w"> </span>-o<span class="w"> </span>malbolge-hello.out<span class="w"> </span>main.o<span class="w"> </span>malbolge.o<span class="w"> </span>malbolge_machine_state.o
-./malbolge-hello.out
-GENERATION<span class="w"> </span><span class="c1">#1</span>
-<span class="w">        </span>GENERATION<span class="w"> </span>SIZE:<span class="w"> </span><span class="m">1</span>
-<span class="w">        </span>BEST<span class="w"> </span>RESULT<span class="w">    </span>:
-<span class="w">        </span>BEST<span class="w"> </span>SCORE<span class="w">     </span>:<span class="w"> </span><span class="m">0</span>
-GENERATION<span class="w"> </span><span class="c1">#2</span>
-<span class="w">        </span>GENERATION<span class="w"> </span>SIZE:<span class="w"> </span><span class="m">8</span>
-<span class="w">        </span>BEST<span class="w"> </span>RESULT<span class="w">    </span>:
-<span class="w">        </span>BEST<span class="w"> </span>SCORE<span class="w">     </span>:<span class="w"> </span>-1
-
-...
-
-GENERATION<span class="w"> </span><span class="c1">#76</span>
-<span class="w">        </span>GENERATION<span class="w"> </span>SIZE:<span class="w"> </span><span class="m">10000</span>
-<span class="w">        </span>BEST<span class="w"> </span>RESULT<span class="w">    </span>:<span class="w"> </span>Hello,<span class="w"> </span>World!
-<span class="w">        </span>BEST<span class="w"> </span>SCORE<span class="w">     </span>:<span class="w"> </span><span class="m">55</span>
-GENERATION<span class="w"> </span><span class="c1">#77</span>
-<span class="w">        </span>GENERATION<span class="w"> </span>SIZE:<span class="w"> </span><span class="m">10000</span>
-<span class="w">        </span>BEST<span class="w"> </span>RESULT<span class="w">    </span>:<span class="w"> </span>Hello,<span class="w"> </span>World!
-
-<span class="w">        </span>BEST<span class="w"> </span>SCORE<span class="w">     </span>:<span class="w"> </span><span class="m">64</span>
-
-<span class="w">        </span>FINAL<span class="w"> </span>RESULT<span class="w">   </span>:<span class="w"> </span>Hello,<span class="w"> </span>World!
-
-<span class="w">        </span>FINAL<span class="w"> </span>SCORE<span class="w">    </span>:<span class="w"> </span><span class="m">64</span>
-<span class="w">        </span>CODE<span class="w">           </span>:<span class="w"> </span><span class="o">(=</span>&lt;<span class="sb">`</span><span class="c1">#9]76ZY327U/.Q210/.-,+*)(&#39;&amp;%$#&quot;!~}|{z(Kw%$t&quot;VqpihmlO+M)g`ed#baDlA]\[Z=XW99Nr5p3Im0FEDhHG)?c=&lt;`##8\}Z:9yVC543210/.-,+*)(&#39;&amp;%$#c!~}v</span>
-</pre></div>
 </div>
 </div>
 </section>
@@ -542,20 +502,20 @@ GENERATION<span class="w"> </span><span class="c1">#77</span>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="lua.html"
+       href="bf.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Lua</p>
+        <p class="prev-next-title">Brainfuck</p>
       </div>
     </a>
     <a class="right-next"
-       href="ml.html"
+       href="c.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">OCaml</p>
+        <p class="prev-next-title">C</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
