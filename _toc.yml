@@ -5,6 +5,7 @@ sections:
   sections:
   - file: docs/adb
   - file: docs/bf
+  - file: docs/binf
   - file: docs/c
   - file: docs/cr
   - file: docs/d
