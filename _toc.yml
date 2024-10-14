@@ -1,10 +1,6 @@
 format: jb-book
 root: docs/intro
 parts:
-- caption: Overview
-  chapters:
-  - file: docs/toc.md
-
 - caption: GPlang
   chapters:
   - file: docs/adb
