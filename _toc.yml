@@ -1,11 +1,13 @@
-format: jb-article
+format: jb-book
 root: docs/intro
-sections:
-- file: docs/toc.md
-  sections:
+parts:
+- caption: Overview
+  chapters:
+  - file: docs/toc.md
+
+- caption: GPlang
+  chapters:
   - file: docs/adb
-  - file: docs/bf
-  - file: docs/binf
   - file: docs/c
   - file: docs/cr
   - file: docs/d
@@ -16,7 +18,6 @@ sections:
   - file: docs/jl
   - file: docs/js
   - file: docs/lua
-  - file: docs/mal
   - file: docs/ml
   - file: docs/nim
   - file: docs/pas
@@ -29,3 +30,9 @@ sections:
   - file: docs/scala
   - file: docs/tex
   - file: docs/zig
+
+- caption: Esolang
+  chapters:
+  - file: docs/bf
+  - file: docs/binf
+  - file: docs/mal
