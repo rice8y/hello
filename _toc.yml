@@ -31,4 +31,5 @@ parts:
   chapters:
   - file: docs/bf
   - file: docs/binf
+  - file: docs/dna
   - file: docs/mal
