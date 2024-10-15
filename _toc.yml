@@ -8,6 +8,7 @@ parts:
   - file: docs/cpp
   - file: docs/cr
   - file: docs/d
+  - file: docs/dats
   - file: docs/f
   - file: docs/go
   - file: docs/hs
