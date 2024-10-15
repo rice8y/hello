@@ -26,6 +26,7 @@ parts:
   - file: docs/s
   - file: docs/sbcl
   - file: docs/scala
+  - file: docs/spl
   - file: docs/tex
   - file: docs/zig
 
