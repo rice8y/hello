@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Go &#8212; Hello, World!</title>
+    <title>Perl &#8212; Hello, World!</title>
   
   
   
@@ -60,12 +60,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/go';</script>
-    <link rel="canonical" href="https://rice8y.github.io/hello/docs/go.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/perl';</script>
+    <link rel="canonical" href="https://rice8y.github.io/hello/docs/perl.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Haskell" href="haskell.html" />
-    <link rel="prev" title="Fortran" href="fortran.html" />
+    <link rel="next" title="PHP" href="php.html" />
+    <link rel="prev" title="Pascal" href="pascal.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="unknown"/>
   </head>
@@ -190,7 +190,7 @@
 <li class="toctree-l1"><a class="reference internal" href="crystal.html">Crystal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="d.html">D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="fortran.html">Fortran</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="go.html">Go</a></li>
 <li class="toctree-l1"><a class="reference internal" href="haskell.html">Haskell</a></li>
 <li class="toctree-l1"><a class="reference internal" href="java.html">Java</a></li>
 <li class="toctree-l1"><a class="reference internal" href="julia.html">Julia</a></li>
@@ -200,7 +200,7 @@
 <li class="toctree-l1"><a class="reference internal" href="octave.html">Octave</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ocaml.html">OCaml</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pascal.html">Pascal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="perl.html">Perl</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Perl</a></li>
 <li class="toctree-l1"><a class="reference internal" href="php.html">PHP</a></li>
 <li class="toctree-l1"><a class="reference internal" href="python.html">Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ruby.html">Ruby</a></li>
@@ -291,7 +291,7 @@
       
       
       
-      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/go.md" target="_blank"
+      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/perl.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -308,7 +308,7 @@
       
       
       
-      <li><a href="https://github.com/rice8y/hello/issues/new?title=Issue%20on%20page%20%2Fdocs/go.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/rice8y/hello/issues/new?title=Issue%20on%20page%20%2Fdocs/perl.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -338,7 +338,7 @@
       
       
       
-      <li><a href="../_sources/docs/go.md" target="_blank"
+      <li><a href="../_sources/docs/perl.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -422,7 +422,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Go</h1>
+    <h1>Perl</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -446,19 +446,29 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="go">
-<h1>Go<a class="headerlink" href="#go" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="perl">
+<h1>Perl<a class="headerlink" href="#perl" title="Link to this heading">#</a></h1>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
-<p>Goをインストールする.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>golang
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>perl
 </pre></div>
 </div>
 </section>
 <section id="version">
 <h2>Version<a class="headerlink" href="#version" title="Link to this heading">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>go<span class="w"> </span>version
-go<span class="w"> </span>version<span class="w"> </span>go1.18.1<span class="w"> </span>linux/amd64
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>perl<span class="w"> </span>--version
+
+This<span class="w"> </span>is<span class="w"> </span>perl<span class="w"> </span><span class="m">5</span>,<span class="w"> </span>version<span class="w"> </span><span class="m">34</span>,<span class="w"> </span>subversion<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">(</span>v5.34.0<span class="o">)</span><span class="w"> </span>built<span class="w"> </span><span class="k">for</span><span class="w"> </span>x86_64-linux-gnu-thread-multi
+<span class="o">(</span>with<span class="w"> </span><span class="m">60</span><span class="w"> </span>registered<span class="w"> </span>patches,<span class="w"> </span>see<span class="w"> </span>perl<span class="w"> </span>-V<span class="w"> </span><span class="k">for</span><span class="w"> </span>more<span class="w"> </span>detail<span class="o">)</span>
+
+Copyright<span class="w"> </span><span class="m">1987</span>-2021,<span class="w"> </span>Larry<span class="w"> </span>Wall
+
+Perl<span class="w"> </span>may<span class="w"> </span>be<span class="w"> </span>copied<span class="w"> </span>only<span class="w"> </span>under<span class="w"> </span>the<span class="w"> </span>terms<span class="w"> </span>of<span class="w"> </span>either<span class="w"> </span>the<span class="w"> </span>Artistic<span class="w"> </span>License<span class="w"> </span>or<span class="w"> </span>the
+GNU<span class="w"> </span>General<span class="w"> </span>Public<span class="w"> </span>License,<span class="w"> </span>which<span class="w"> </span>may<span class="w"> </span>be<span class="w"> </span>found<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>Perl<span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="nb">source</span><span class="w"> </span>kit.
+
+Complete<span class="w"> </span>documentation<span class="w"> </span><span class="k">for</span><span class="w"> </span>Perl,<span class="w"> </span>including<span class="w"> </span>FAQ<span class="w"> </span>lists,<span class="w"> </span>should<span class="w"> </span>be<span class="w"> </span>found<span class="w"> </span>on
+this<span class="w"> </span>system<span class="w"> </span>using<span class="w"> </span><span class="s2">&quot;man perl&quot;</span><span class="w"> </span>or<span class="w"> </span><span class="s2">&quot;perldoc perl&quot;</span>.<span class="w">  </span>If<span class="w"> </span>you<span class="w"> </span>have<span class="w"> </span>access<span class="w"> </span>to<span class="w"> </span>the
+Internet,<span class="w"> </span>point<span class="w"> </span>your<span class="w"> </span>browser<span class="w"> </span>at<span class="w"> </span>http://www.perl.org/,<span class="w"> </span>the<span class="w"> </span>Perl<span class="w"> </span>Home<span class="w"> </span>Page.
 </pre></div>
 </div>
 </section>
@@ -466,25 +476,13 @@ go<span class="w"> </span>version<span class="w"> </span>go1.18.1<span class="w"
 <h2>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h2>
 <div class="tab-set docutils">
 <input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">Code</label><div class="tab-content docutils">
-<p><code class="docutils literal notranslate"><span class="pre">hello.go</span></code>:</p>
-<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
-<span class="kn">import</span><span class="w"> </span><span class="s">&quot;fmt&quot;</span>
-
-<span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Hello, World!&quot;</span><span class="p">)</span>
-<span class="p">}</span>
+<p><code class="docutils literal notranslate"><span class="pre">hello.pl</span></code>:</p>
+<div class="highlight-pl notranslate"><div class="highlight"><pre><span></span><span class="k">print</span><span class="w"> </span><span class="s">&quot;Hello, World!\n&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
 <input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Terminal</label><div class="tab-content docutils">
-<p><strong><code class="docutils literal notranslate"><span class="pre">go</span> <span class="pre">run</span></code> Ver.</strong></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>go<span class="w"> </span>run<span class="w"> </span>hello.go
-Hello,<span class="w"> </span>World!
-</pre></div>
-</div>
-<p><strong><code class="docutils literal notranslate"><span class="pre">go</span> <span class="pre">build</span></code> Ver.</strong></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>go<span class="w"> </span>build<span class="w"> </span>hello.go
-$<span class="w"> </span>./hello
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>perl<span class="w"> </span>hello.pl
 Hello,<span class="w"> </span>World!
 </pre></div>
 </div>
@@ -524,20 +522,20 @@ Hello,<span class="w"> </span>World!
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="fortran.html"
+       href="pascal.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Fortran</p>
+        <p class="prev-next-title">Pascal</p>
       </div>
     </a>
     <a class="right-next"
-       href="haskell.html"
+       href="php.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Haskell</p>
+        <p class="prev-next-title">PHP</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
