@@ -16,7 +16,6 @@ parts:
   - file: docs/julia
   - file: docs/javascript
   - file: docs/lua
-  - file: docs/monologe
   - file: docs/nim
   - file: docs/octave
   - file: docs/ocaml
@@ -40,4 +39,5 @@ parts:
   - file: docs/dnasharp
   - file: docs/factor
   - file: docs/malbolge
+  - file: docs/monologe
   - file: docs/shakespeare
