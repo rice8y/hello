@@ -24,7 +24,7 @@ There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR P
 ````{tab} Code
 `hello.adb`:
 
-```adb
+```none
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Hello is

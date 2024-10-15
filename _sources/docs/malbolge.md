@@ -14,7 +14,7 @@ $ gcc -o malbolge malbolge.c
 ````{tab} Code
 `hello.mal`:
 
-```mal
+```none
 (=<`#9]76ZY327U/.Q210/.-,+*)('&%$#"!~}|{z(Kw%$t"VqpihmlO+M)g`ed#baDlA]\[Z=XW99Nr5p3Im0FEDhHG)?c=<`##8\}Z:9yVC543210/.-,+*)('&%$#c!~}v
 ```
 ````
