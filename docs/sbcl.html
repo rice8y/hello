@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Factor &#8212; Hello, World!</title>
+    <title>SBCL &#8212; Hello, World!</title>
   
   
   
@@ -60,12 +60,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/fact';</script>
-    <link rel="canonical" href="https://rice8y.github.io/hello/docs/fact.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/sbcl';</script>
+    <link rel="canonical" href="https://rice8y.github.io/hello/docs/sbcl.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Malbolge" href="mal.html" />
-    <link rel="prev" title="DNA#" href="dna.html" />
+    <link rel="next" title="Scala" href="scala.html" />
+    <link rel="prev" title="x86 GNU Assembler" href="s.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="unknown"/>
   </head>
@@ -182,7 +182,7 @@
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">GPlang</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="adb.html">Ada</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c.html">C</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cr.html">Crystal</a></li>
@@ -204,18 +204,18 @@
 <li class="toctree-l1"><a class="reference internal" href="rb.html">Ruby</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rs.html">Rust</a></li>
 <li class="toctree-l1"><a class="reference internal" href="s.html">x86 GNU Assembler</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sbcl.html">SBCL</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">SBCL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scala.html">Scala</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tex.html">TeX/LaTeX</a></li>
 <li class="toctree-l1"><a class="reference internal" href="zig.html">Zig</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Esolang</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="alex.html">Alex</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bf.html">Brainfuck</a></li>
 <li class="toctree-l1"><a class="reference internal" href="binf.html">Binaryfuck</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dna.html">DNA#</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Factor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fact.html">Factor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mal.html">Malbolge</a></li>
 </ul>
 
@@ -288,7 +288,7 @@
       
       
       
-      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/fact.md" target="_blank"
+      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/sbcl.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -305,7 +305,7 @@
       
       
       
-      <li><a href="https://github.com/rice8y/hello/issues/new?title=Issue%20on%20page%20%2Fdocs/fact.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/rice8y/hello/issues/new?title=Issue%20on%20page%20%2Fdocs/sbcl.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -335,7 +335,7 @@
       
       
       
-      <li><a href="../_sources/docs/fact.md" target="_blank"
+      <li><a href="../_sources/docs/sbcl.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -419,7 +419,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Factor</h1>
+    <h1>SBCL</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -430,6 +430,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#version">Version</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 </ul>
             </nav>
@@ -442,17 +443,19 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="factor">
-<h1>Factor<a class="headerlink" href="#factor" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="sbcl">
+<h1>SBCL<a class="headerlink" href="#sbcl" title="Link to this heading">#</a></h1>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
-<p>Factorインタプリタをダウンロードする.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/bangyen/factor-lang.git
+<p>SBCL(Steel Bank Common Lisp)をインストールする.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>sbcl
 </pre></div>
 </div>
-<p>コンパイルしてJavaクラスファイルを生成する.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>factor-lang
-$<span class="w"> </span>javac<span class="w"> </span>Factor.java
+</section>
+<section id="version">
+<h2>Version<a class="headerlink" href="#version" title="Link to this heading">#</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sbcl<span class="w"> </span>--version
+SBCL<span class="w"> </span><span class="m">2</span>.1.11.debian
 </pre></div>
 </div>
 </section>
@@ -460,16 +463,32 @@ $<span class="w"> </span>javac<span class="w"> </span>Factor.java
 <h2>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h2>
 <div class="tab-set docutils">
 <input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">Code</label><div class="tab-content docutils">
-<p><code class="docutils literal notranslate"><span class="pre">hello.fact</span></code>:</p>
-<div class="highlight-fact notranslate"><div class="highlight"><pre><span></span>36984924266003615011922653548527570776906394809095728390502664039084719772448479329746834661893127321230163671735810849403074005761268978590248555684779144382415921832191113067910581943341169429198926424099575803838053434
-04521042240664795615638882918038183763337269852438177379279391198914318905708522942429083175949043436907382373784120050883530130461783536262371435927784898403902181728422040719539510804769372687954420886480089024272479698
-54889772223647035477079664668940365466078882182082894544832162058432687471432035039562211894622122320810162126668193392646612444866666683344534104321551076240489177599069299330395158157392813505315866908539620319418304827
+<p><code class="docutils literal notranslate"><span class="pre">hello.lisp</span></code>:</p>
+<div class="highlight-lisp notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="nb">format</span><span class="w"> </span><span class="no">t</span><span class="w"> </span><span class="s">&quot;Hello, World!~%&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Terminal</label><div class="tab-content docutils">
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>java<span class="w"> </span>Factor<span class="w"> </span>hello.fact
+<p><strong><code class="docutils literal notranslate"><span class="pre">sbcl</span> <span class="pre">--script</span></code> Ver.</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sbcl<span class="w"> </span>--script<span class="w"> </span>hello.lisp
 Hello,<span class="w"> </span>World!
+</pre></div>
+</div>
+<p><strong>REPL Ver.</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sbcl
+This<span class="w"> </span>is<span class="w"> </span>SBCL<span class="w"> </span><span class="m">2</span>.1.11.debian,<span class="w"> </span>an<span class="w"> </span>implementation<span class="w"> </span>of<span class="w"> </span>ANSI<span class="w"> </span>Common<span class="w"> </span>Lisp.
+More<span class="w"> </span>information<span class="w"> </span>about<span class="w"> </span>SBCL<span class="w"> </span>is<span class="w"> </span>available<span class="w"> </span>at<span class="w"> </span>&lt;http://www.sbcl.org/&gt;.
+
+SBCL<span class="w"> </span>is<span class="w"> </span>free<span class="w"> </span>software,<span class="w"> </span>provided<span class="w"> </span>as<span class="w"> </span>is,<span class="w"> </span>with<span class="w"> </span>absolutely<span class="w"> </span>no<span class="w"> </span>warranty.
+It<span class="w"> </span>is<span class="w"> </span>mostly<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>public<span class="w"> </span>domain<span class="p">;</span><span class="w"> </span>some<span class="w"> </span>portions<span class="w"> </span>are<span class="w"> </span>provided<span class="w"> </span>under
+BSD-style<span class="w"> </span>licenses.<span class="w">  </span>See<span class="w"> </span>the<span class="w"> </span>CREDITS<span class="w"> </span>and<span class="w"> </span>COPYING<span class="w"> </span>files<span class="w"> </span><span class="k">in</span><span class="w"> </span>the
+distribution<span class="w"> </span><span class="k">for</span><span class="w"> </span>more<span class="w"> </span>information.
+*<span class="w"> </span><span class="o">(</span>load<span class="w"> </span><span class="s2">&quot;hello.lisp&quot;</span><span class="o">)</span><span class="w">         </span>
+Hello,<span class="w"> </span>World!
+T
+*<span class="w"> </span><span class="o">(</span>format<span class="w"> </span>t<span class="w"> </span><span class="s2">&quot;Hello, World!~%&quot;</span><span class="o">)</span>
+Hello,<span class="w"> </span>World!
+NIL
 </pre></div>
 </div>
 </div>
@@ -508,20 +527,20 @@ Hello,<span class="w"> </span>World!
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="dna.html"
+       href="s.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">DNA#</p>
+        <p class="prev-next-title">x86 GNU Assembler</p>
       </div>
     </a>
     <a class="right-next"
-       href="mal.html"
+       href="scala.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Malbolge</p>
+        <p class="prev-next-title">Scala</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -542,6 +561,7 @@ Hello,<span class="w"> </span>World!
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#version">Version</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 </ul>
   </nav></div>
