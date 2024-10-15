@@ -26,7 +26,6 @@ parts:
   - file: docs/s
   - file: docs/sbcl
   - file: docs/scala
-  - file: docs/spl
   - file: docs/tex
   - file: docs/zig
 
@@ -38,3 +37,4 @@ parts:
   - file: docs/dna
   - file: docs/fact
   - file: docs/mal
+  - file: docs/spl
