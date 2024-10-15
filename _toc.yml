@@ -9,6 +9,7 @@ parts:
   - file: docs/d
   - file: docs/f
   - file: docs/go
+  - file: docs/hs
   - file: docs/cpp
   - file: docs/java
   - file: docs/jl
@@ -23,6 +24,7 @@ parts:
   - file: docs/rb
   - file: docs/rs
   - file: docs/s
+  - file: docs/sbcl
   - file: docs/scala
   - file: docs/tex
   - file: docs/zig
