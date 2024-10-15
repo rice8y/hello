@@ -13,7 +13,7 @@ $ git clone https://github.com/SLNETAIGA/AlexEsoLang.git
 ````{tab} Code
 `hello.alex`:
 
-```alex
+```none
 Say H - Alex.
 Say e - Alex.
 Say l - Alex.

@@ -13,7 +13,7 @@ $ pip install shakespearelang
 ````{tab} Code
 `hello.spl`:
 
-```spl
+```none
 The Infamous Hello World Program.
 
 Romeo, a young man with a remarkable patience.

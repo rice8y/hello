@@ -16,6 +16,7 @@ parts:
   - file: docs/julia
   - file: docs/javascript
   - file: docs/lua
+  - file: docs/monologe
   - file: docs/nim
   - file: docs/octave
   - file: docs/ocaml

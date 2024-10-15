@@ -40,7 +40,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ````{tab} Code
 `hello.dats`:
 
-```dats
+```none
 implement main0 () = () where {
   val () = println! "Hello, World!"
 }
