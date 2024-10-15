@@ -29,7 +29,9 @@ parts:
 
 - caption: Esolang
   chapters:
+  - file: docs/alex
   - file: docs/bf
   - file: docs/binf
   - file: docs/dna
+  - file: docs/fact
   - file: docs/mal
