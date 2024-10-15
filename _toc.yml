@@ -1,42 +1,42 @@
 format: jb-book
 root: docs/intro
 parts:
-- caption: GPlang
+- caption: Stdlang
   chapters:
-  - file: docs/adb
+  - file: docs/ada
+  - file: docs/ats
   - file: docs/c
   - file: docs/cpp
-  - file: docs/cr
+  - file: docs/crystal
   - file: docs/d
-  - file: docs/dats
-  - file: docs/f
+  - file: docs/fortran
   - file: docs/go
-  - file: docs/hs
+  - file: docs/haskell
   - file: docs/java
-  - file: docs/jl
-  - file: docs/js
+  - file: docs/julia
+  - file: docs/javascript
   - file: docs/lua
-  - file: docs/m
-  - file: docs/ml
   - file: docs/nim
-  - file: docs/pas
+  - file: docs/octave
+  - file: docs/ocaml
+  - file: docs/pascal
+  - file: docs/perl
   - file: docs/php
-  - file: docs/pl
-  - file: docs/py
-  - file: docs/rb
-  - file: docs/rs
-  - file: docs/s
+  - file: docs/python
+  - file: docs/ruby
+  - file: docs/rust
   - file: docs/sbcl
   - file: docs/scala
   - file: docs/tex
+  - file: docs/x86
   - file: docs/zig
 
 - caption: Esolang
   chapters:
   - file: docs/alex
-  - file: docs/bf
-  - file: docs/binf
-  - file: docs/dna
-  - file: docs/fact
-  - file: docs/mal
-  - file: docs/spl
+  - file: docs/binaryfuck
+  - file: docs/brainfuck
+  - file: docs/dnasharp
+  - file: docs/factor
+  - file: docs/malbolge
+  - file: docs/shakespeare
