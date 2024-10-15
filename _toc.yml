@@ -38,7 +38,9 @@ parts:
   - file: docs/brainfuck
   - file: docs/dnasharp
   - file: docs/factor
+  - file: docs/labyrinth
   - file: docs/malbolge
   - file: docs/monologe
   - file: docs/nya
   - file: docs/shakespeare
+  - file: docs/textgarbage
