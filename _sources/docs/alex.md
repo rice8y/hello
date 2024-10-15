@@ -14,9 +14,6 @@ $ git clone https://github.com/SLNETAIGA/AlexEsoLang.git
 `hello.alex`:
 
 ```alex
-You: This is a comment.
-You: Hello World in Alex
-
 Say H - Alex.
 Say e - Alex.
 Say l - Alex.
