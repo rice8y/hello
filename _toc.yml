@@ -40,4 +40,5 @@ parts:
   - file: docs/factor
   - file: docs/malbolge
   - file: docs/monologe
+  - file: docs/nya
   - file: docs/shakespeare
