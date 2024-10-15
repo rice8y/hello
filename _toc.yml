@@ -5,16 +5,17 @@ parts:
   chapters:
   - file: docs/adb
   - file: docs/c
+  - file: docs/cpp
   - file: docs/cr
   - file: docs/d
   - file: docs/f
   - file: docs/go
   - file: docs/hs
-  - file: docs/cpp
   - file: docs/java
   - file: docs/jl
   - file: docs/js
   - file: docs/lua
+  - file: docs/m
   - file: docs/ml
   - file: docs/nim
   - file: docs/pas

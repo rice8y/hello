@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>PHP &#8212; Hello, World!</title>
+    <title>Octave &#8212; Hello, World!</title>
   
   
   
@@ -60,12 +60,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/php';</script>
-    <link rel="canonical" href="https://rice8y.github.io/hello/docs/php.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/m';</script>
+    <link rel="canonical" href="https://rice8y.github.io/hello/docs/m.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Perl" href="pl.html" />
-    <link rel="prev" title="Pascal" href="pas.html" />
+    <link rel="next" title="OCaml" href="ml.html" />
+    <link rel="prev" title="Lua" href="lua.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="unknown"/>
   </head>
@@ -195,11 +195,11 @@
 <li class="toctree-l1"><a class="reference internal" href="jl.html">Julia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="js.html">JavaScript</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lua.html">Lua</a></li>
-<li class="toctree-l1"><a class="reference internal" href="m.html">Octave</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Octave</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ml.html">OCaml</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nim.html">Nim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pas.html">Pascal</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">PHP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="php.html">PHP</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pl.html">Perl</a></li>
 <li class="toctree-l1"><a class="reference internal" href="py.html">Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rb.html">Ruby</a></li>
@@ -290,7 +290,7 @@
       
       
       
-      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/php.md" target="_blank"
+      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/m.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -307,7 +307,7 @@
       
       
       
-      <li><a href="https://github.com/rice8y/hello/issues/new?title=Issue%20on%20page%20%2Fdocs/php.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/rice8y/hello/issues/new?title=Issue%20on%20page%20%2Fdocs/m.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -337,7 +337,7 @@
       
       
       
-      <li><a href="../_sources/docs/php.md" target="_blank"
+      <li><a href="../_sources/docs/m.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -421,7 +421,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>PHP</h1>
+    <h1>Octave</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -432,6 +432,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fixing-the-permissions-of-the-runtime-directory">Fixing the permissions of the runtime directory</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#version">Version</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 </ul>
@@ -445,21 +446,38 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="php">
-<h1>PHP<a class="headerlink" href="#php" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="octave">
+<h1>Octave<a class="headerlink" href="#octave" title="Link to this heading">#</a></h1>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>php<span class="w"> </span>libapache2-mod-php
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>octave
+</pre></div>
+</div>
+</section>
+<section id="fixing-the-permissions-of-the-runtime-directory">
+<h2>Fixing the permissions of the runtime directory<a class="headerlink" href="#fixing-the-permissions-of-the-runtime-directory" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">/run/user/1000</span></code>のパーミッションを修正する.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>chmod<span class="w"> </span><span class="m">700</span><span class="w"> </span>/run/user/1000
 </pre></div>
 </div>
 </section>
 <section id="version">
 <h2>Version<a class="headerlink" href="#version" title="Link to this heading">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>php<span class="w"> </span>--version
-PHP<span class="w"> </span><span class="m">8</span>.1.2-1ubuntu2.19<span class="w"> </span><span class="o">(</span>cli<span class="o">)</span><span class="w"> </span><span class="o">(</span>built:<span class="w"> </span>Sep<span class="w"> </span><span class="m">30</span><span class="w"> </span><span class="m">2024</span><span class="w"> </span><span class="m">16</span>:25:25<span class="o">)</span><span class="w"> </span><span class="o">(</span>NTS<span class="o">)</span>
-Copyright<span class="w"> </span><span class="o">(</span>c<span class="o">)</span><span class="w"> </span>The<span class="w"> </span>PHP<span class="w"> </span>Group
-Zend<span class="w"> </span>Engine<span class="w"> </span>v4.1.2,<span class="w"> </span>Copyright<span class="w"> </span><span class="o">(</span>c<span class="o">)</span><span class="w"> </span>Zend<span class="w"> </span>Technologies
-<span class="w">    </span>with<span class="w"> </span>Zend<span class="w"> </span>OPcache<span class="w"> </span>v8.1.2-1ubuntu2.19,<span class="w"> </span>Copyright<span class="w"> </span><span class="o">(</span>c<span class="o">)</span>,<span class="w"> </span>by<span class="w"> </span>Zend<span class="w"> </span>Technologies
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>octave<span class="w"> </span>--version
+GNU<span class="w"> </span>Octave,<span class="w"> </span>version<span class="w"> </span><span class="m">6</span>.4.0
+Copyright<span class="w"> </span><span class="o">(</span>C<span class="o">)</span><span class="w"> </span><span class="m">2021</span><span class="w"> </span>The<span class="w"> </span>Octave<span class="w"> </span>Project<span class="w"> </span>Developers.
+This<span class="w"> </span>is<span class="w"> </span>free<span class="w"> </span>software<span class="p">;</span><span class="w"> </span>see<span class="w"> </span>the<span class="w"> </span><span class="nb">source</span><span class="w"> </span>code<span class="w"> </span><span class="k">for</span><span class="w"> </span>copying<span class="w"> </span>conditions.
+There<span class="w"> </span>is<span class="w"> </span>ABSOLUTELY<span class="w"> </span>NO<span class="w"> </span>WARRANTY<span class="p">;</span><span class="w"> </span>not<span class="w"> </span>even<span class="w"> </span><span class="k">for</span><span class="w"> </span>MERCHANTABILITY<span class="w"> </span>or
+FITNESS<span class="w"> </span>FOR<span class="w"> </span>A<span class="w"> </span>PARTICULAR<span class="w"> </span>PURPOSE.
+
+Octave<span class="w"> </span>was<span class="w"> </span>configured<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="s2">&quot;x86_64-pc-linux-gnu&quot;</span>.
+
+Additional<span class="w"> </span>information<span class="w"> </span>about<span class="w"> </span>Octave<span class="w"> </span>is<span class="w"> </span>available<span class="w"> </span>at<span class="w"> </span>https://www.octave.org.
+
+Please<span class="w"> </span>contribute<span class="w"> </span><span class="k">if</span><span class="w"> </span>you<span class="w"> </span>find<span class="w"> </span>this<span class="w"> </span>software<span class="w"> </span>useful.
+For<span class="w"> </span>more<span class="w"> </span>information,<span class="w"> </span>visit<span class="w"> </span>https://www.octave.org/get-involved.html
+
+Read<span class="w"> </span>https://www.octave.org/bugs.html<span class="w"> </span>to<span class="w"> </span>learn<span class="w"> </span>how<span class="w"> </span>to<span class="w"> </span>submit<span class="w"> </span>bug<span class="w"> </span>reports.
 </pre></div>
 </div>
 </section>
@@ -467,15 +485,36 @@ Zend<span class="w"> </span>Engine<span class="w"> </span>v4.1.2,<span class="w"
 <h2>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h2>
 <div class="tab-set docutils">
 <input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">Code</label><div class="tab-content docutils">
-<p><code class="docutils literal notranslate"><span class="pre">hello.php</span></code>:</p>
-<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
-<span class="k">echo</span> <span class="s2">&quot;Hello, World!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
-<span class="cp">?&gt;</span>
+<p><code class="docutils literal notranslate"><span class="pre">hello.m</span></code>:</p>
+<div class="highlight-m notranslate"><div class="highlight"><pre><span></span>printf(&quot;Hello, World!\n&quot;);
 </pre></div>
 </div>
 </div>
 <input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Terminal</label><div class="tab-content docutils">
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>php<span class="w"> </span>hello.php
+<p><strong>Script Ver.</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>octave<span class="w"> </span>hello.m
+Hello,<span class="w"> </span>World!
+</pre></div>
+</div>
+<p><strong>REPL Ver.</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>octave
+GNU<span class="w"> </span>Octave,<span class="w"> </span>version<span class="w"> </span><span class="m">6</span>.4.0
+Copyright<span class="w"> </span><span class="o">(</span>C<span class="o">)</span><span class="w"> </span><span class="m">2021</span><span class="w"> </span>The<span class="w"> </span>Octave<span class="w"> </span>Project<span class="w"> </span>Developers.
+This<span class="w"> </span>is<span class="w"> </span>free<span class="w"> </span>software<span class="p">;</span><span class="w"> </span>see<span class="w"> </span>the<span class="w"> </span><span class="nb">source</span><span class="w"> </span>code<span class="w"> </span><span class="k">for</span><span class="w"> </span>copying<span class="w"> </span>conditions.
+There<span class="w"> </span>is<span class="w"> </span>ABSOLUTELY<span class="w"> </span>NO<span class="w"> </span>WARRANTY<span class="p">;</span><span class="w"> </span>not<span class="w"> </span>even<span class="w"> </span><span class="k">for</span><span class="w"> </span>MERCHANTABILITY<span class="w"> </span>or
+FITNESS<span class="w"> </span>FOR<span class="w"> </span>A<span class="w"> </span>PARTICULAR<span class="w"> </span>PURPOSE.<span class="w">  </span>For<span class="w"> </span>details,<span class="w"> </span><span class="nb">type</span><span class="w"> </span><span class="s1">&#39;warranty&#39;</span>.
+
+Octave<span class="w"> </span>was<span class="w"> </span>configured<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="s2">&quot;x86_64-pc-linux-gnu&quot;</span>.
+
+Additional<span class="w"> </span>information<span class="w"> </span>about<span class="w"> </span>Octave<span class="w"> </span>is<span class="w"> </span>available<span class="w"> </span>at<span class="w"> </span>https://www.octave.org.
+
+Please<span class="w"> </span>contribute<span class="w"> </span><span class="k">if</span><span class="w"> </span>you<span class="w"> </span>find<span class="w"> </span>this<span class="w"> </span>software<span class="w"> </span>useful.
+For<span class="w"> </span>more<span class="w"> </span>information,<span class="w"> </span>visit<span class="w"> </span>https://www.octave.org/get-involved.html
+
+Read<span class="w"> </span>https://www.octave.org/bugs.html<span class="w"> </span>to<span class="w"> </span>learn<span class="w"> </span>how<span class="w"> </span>to<span class="w"> </span>submit<span class="w"> </span>bug<span class="w"> </span>reports.
+For<span class="w"> </span>information<span class="w"> </span>about<span class="w"> </span>changes<span class="w"> </span>from<span class="w"> </span>previous<span class="w"> </span>versions,<span class="w"> </span><span class="nb">type</span><span class="w"> </span><span class="s1">&#39;news&#39;</span>.
+
+octave:1&gt;<span class="w"> </span>printf<span class="o">(</span><span class="s2">&quot;Hello, World!\n&quot;</span><span class="o">)</span><span class="p">;</span>
 Hello,<span class="w"> </span>World!
 </pre></div>
 </div>
@@ -515,20 +554,20 @@ Hello,<span class="w"> </span>World!
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="pas.html"
+       href="lua.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Pascal</p>
+        <p class="prev-next-title">Lua</p>
       </div>
     </a>
     <a class="right-next"
-       href="pl.html"
+       href="ml.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Perl</p>
+        <p class="prev-next-title">OCaml</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -549,6 +588,7 @@ Hello,<span class="w"> </span>World!
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fixing-the-permissions-of-the-runtime-directory">Fixing the permissions of the runtime directory</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#version">Version</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 </ul>
