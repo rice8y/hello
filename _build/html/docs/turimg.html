@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Shakespeare &#8212; Hello, World!</title>
+    <title>turimg &#8212; Hello, World!</title>
   
   
   
@@ -60,12 +60,11 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/shakespeare';</script>
-    <link rel="canonical" href="https://rice8y.github.io/hello/docs/shakespeare.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/turimg';</script>
+    <link rel="canonical" href="https://rice8y.github.io/hello/docs/turimg.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="TextGarbage" href="textgarbage.html" />
-    <link rel="prev" title="nya~" href="nya.html" />
+    <link rel="prev" title="TextGarbage" href="textgarbage.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="unknown"/>
   </head>
@@ -223,9 +222,9 @@
 <li class="toctree-l1"><a class="reference internal" href="malbolge.html">Malbolge</a></li>
 <li class="toctree-l1"><a class="reference internal" href="monologe.html">Monologe</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nya.html">nya~</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Shakespeare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shakespeare.html">Shakespeare</a></li>
 <li class="toctree-l1"><a class="reference internal" href="textgarbage.html">TextGarbage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="turimg.html">turimg</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">turimg</a></li>
 </ul>
 
     </div>
@@ -297,7 +296,7 @@
       
       
       
-      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/shakespeare.md" target="_blank"
+      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/turimg.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -314,7 +313,7 @@
       
       
       
-      <li><a href="https://github.com/rice8y/hello/issues/new?title=Issue%20on%20page%20%2Fdocs/shakespeare.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/rice8y/hello/issues/new?title=Issue%20on%20page%20%2Fdocs/turimg.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -344,7 +343,7 @@
       
       
       
-      <li><a href="../_sources/docs/shakespeare.md" target="_blank"
+      <li><a href="../_sources/docs/turimg.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -428,7 +427,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Shakespeare</h1>
+    <h1>turimg</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -451,12 +450,16 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="shakespeare">
-<h1>Shakespeare<a class="headerlink" href="#shakespeare" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="turimg">
+<h1>turimg<a class="headerlink" href="#turimg" title="Link to this heading">#</a></h1>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
-<p>Shakespeareをインストールする.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>shakespearelang
+<p>turimgインタプリタをダウンロードする.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/TheZipCreator/turimg.git
+</pre></div>
+</div>
+<p>インタプリタをコンパイルし実行ファイルを生成する.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>dmd<span class="w"> </span>turimg.d<span class="w"> </span>-of<span class="o">=</span>turimg
 </pre></div>
 </div>
 </section>
@@ -464,105 +467,134 @@ document.write(`
 <h2>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h2>
 <div class="tab-set docutils">
 <input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">Code</label><div class="tab-content docutils">
-<p><code class="docutils literal notranslate"><span class="pre">hello.spl</span></code>:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>The Infamous Hello World Program.
-
-Romeo, a young man with a remarkable patience.
-Juliet, a likewise young woman of remarkable grace.
-Ophelia, a remarkable woman much in dispute with Hamlet.
-Hamlet, the flatterer of Andersen Insulting A/S.
-
-
-                    Act I: Hamlet&#39;s insults and flattery.
-
-                    Scene I: The insulting of Romeo.
-
-[Enter Hamlet and Romeo]
-
-Hamlet:
- You lying stupid fatherless big smelly half-witted coward!
- You are as stupid as the difference between a handsome rich brave
- hero and thyself! Speak your mind!
-
- You are as brave as the sum of your fat little stuffed misused dusty
- old rotten codpiece and a beautiful fair warm peaceful sunny summer&#39;s
- day. You are as healthy as the difference between the sum of the
- sweetest reddest rose and my father and yourself! Speak your mind!
-
- You are as cowardly as the sum of yourself and the difference
- between a big mighty proud kingdom and a horse. Speak your mind.
-
- Speak your mind!
-
-[Exit Romeo]
-
-                    Scene II: The praising of Juliet.
-
-[Enter Juliet]
-
-Hamlet:
- Thou art as sweet as the sum of the sum of Romeo and his horse and his
- black cat! Speak thy mind!
-
-[Exit Juliet]
-
-                    Scene III: The praising of Ophelia.
-
-[Enter Ophelia]
-
-Hamlet:
-
- Thou art as beautiful as the difference between Romeo and the square
- of a huge green peaceful tree. Speak thy mind!
-
- Thou art as lovely as the product of a large rural town and my amazing
- bottomless embroidered purse. Speak thy mind!
-
- Thou art as loving as the product of the bluest clearest sweetest sky
- and the sum of a squirrel and a white horse. Thou art as beautiful as
- the difference between Juliet and thyself. Speak thy mind!
-
-[Exeunt Ophelia and Hamlet]
-
-
-                    Act II: Behind Hamlet&#39;s back.
-
-                    Scene I: Romeo and Juliet&#39;s conversation.
-
-[Enter Romeo and Juliet]
-
-Romeo:
- Speak your mind. You are as worried as the sum of yourself and the
- difference between my small smooth hamster and my nose. Speak your
- mind!
-
-Juliet:
- Speak YOUR mind! You are as bad as Hamlet! You are as small as the
- difference between the square of the difference between my little pony
- and your big hairy hound and the cube of your sorry little
- codpiece. Speak your mind!
-
-[Exit Romeo]
-
-                    Scene II: Juliet and Ophelia&#39;s conversation.
-
-[Enter Ophelia]
-
-Juliet:
- Thou art as good as the quotient between Romeo and the sum of a small
- furry animal and a leech. Speak your mind!
-
-Ophelia:
- Thou art as disgusting as the quotient between Romeo and twice the
- difference between a mistletoe and an oozing infected blister! Speak
- your mind!
-
-[Exeunt]
+<p><code class="docutils literal notranslate"><span class="pre">hello.tmg</span></code>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>set0	&gt;	0	set1
+set1	&lt;	1	c0
+c0	&gt;	.	c1
+c1	&lt;	.	c2
+c2		.	c3
+c3	&gt;	.	c4
+c4	&lt;	.	c5
+c5		.	c6
+c6		.	c7
+c7		.	c8
+c8	&gt;	.	c9
+c9		.	c10
+c10	&lt;	.	c11
+c11		.	c12
+c12	&gt;	.	c13
+c13	&lt;	.	c14
+c14	&gt;	.	c15
+c15	&lt;	.	c16
+c16	&gt;	.	c17
+c17		.	c18
+c18	&lt;	.	c19
+c19	&gt;	.	c20
+c20		.	c21
+c21	&lt;	.	c22
+c22		.	c23
+c23		.	c24
+c24	&gt;	.	c25
+c25		.	c26
+c26	&lt;	.	c27
+c27	&gt;	.	c28
+c28		.	c29
+c29	&lt;	.	c30
+c30		.	c31
+c31		.	c32
+c32	&gt;	.	c33
+c33		.	c34
+c34	&lt;	.	c35
+c35	&gt;	.	c36
+c36		.	c37
+c37		.	c38
+c38		.	c39
+c39	&lt;	.	c40
+c40		.	c41
+c41	&gt;	.	c42
+c42	&lt;	.	c43
+c43	&gt;	.	c44
+c44		.	c45
+c45	&lt;	.	c46
+c46		.	c47
+c47		.	c48
+c48		.	c49
+c49	&gt;	.	c50
+c50	&lt;	.	c51
+c51		.	c52
+c52		.	c53
+c53		.	c54
+c54		.	c55
+c55		.	c56
+c56	&gt;	.	c57
+c57	&lt;	.	c58
+c58	&gt;	.	c59
+c59	&lt;	.	c60
+c60	&gt;	.	c61
+c61		.	c62
+c62		.	c63
+c63	&lt;	.	c64
+c64	&gt;	.	c65
+c65		.	c66
+c66	&lt;	.	c67
+c67	&gt;	.	c68
+c68		.	c69
+c69		.	c70
+c70		.	c71
+c71	&lt;	.	c72
+c72	&gt;	.	c73
+c73		.	c74
+c74		.	c75
+c75	&lt;	.	c76
+c76		.	c77
+c77	&gt;	.	c78
+c78	&lt;	.	c79
+c79		.	c80
+c80	&gt;	.	c81
+c81		.	c82
+c82	&lt;	.	c83
+c83	&gt;	.	c84
+c84		.	c85
+c85	&lt;	.	c86
+c86		.	c87
+c87		.	c88
+c88	&gt;	.	c89
+c89		.	c90
+c90	&lt;	.	c91
+c91		.	c92
+c92	&gt;	.	c93
+c93	&lt;	.	c94
+c94		.	c95
+c95		.	c96
+c96		.	c97
+c97	&gt;	.	c98
+c98	&lt;	.	c99
+c99		.	c100
+c100		.	c101
+c101		.	c102
+c102	&gt;	.	c103
+c103	&lt;	.	c104
+c104		.	c105
+c105		.	c106
+c106		.	c107
+c107	&gt;	.	c108
+c108	&lt;	.	c109
+c109	&gt;	.	c110
+c110	&lt;	.	c111
+c111		.	c112
+c112		.	c113
+c113	&gt;	.	c114
+c114	&lt;	.	c115
+c115		.	c116
+c116		.	c117
+c117		.	c118
+c118		.	c119
+c119		.	halt
 </pre></div>
 </div>
 </div>
 <input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Terminal</label><div class="tab-content docutils">
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>shakespeare<span class="w"> </span>run<span class="w"> </span>hello.spl
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>./turimg<span class="w"> </span>hello.tmg<span class="w"> </span>-ascii
 Hello,<span class="w"> </span>World!
 </pre></div>
 </div>
@@ -602,22 +634,13 @@ Hello,<span class="w"> </span>World!
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="nya.html"
+       href="textgarbage.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">nya~</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="textgarbage.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">TextGarbage</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>

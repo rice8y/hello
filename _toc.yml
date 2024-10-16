@@ -45,3 +45,4 @@ parts:
   - file: docs/nya
   - file: docs/shakespeare
   - file: docs/textgarbage
+  - file: docs/turimg
