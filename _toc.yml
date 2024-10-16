@@ -23,6 +23,7 @@ parts:
   - file: docs/perl
   - file: docs/php
   - file: docs/python
+  - file: docs/racket
   - file: docs/ruby
   - file: docs/rust
   - file: docs/sbcl
