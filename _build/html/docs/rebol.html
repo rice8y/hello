@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Crystal &#8212; Hello, World!</title>
+    <title>REBOL &#8212; Hello, World!</title>
   
   
   
@@ -60,12 +60,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/crystal';</script>
-    <link rel="canonical" href="https://rice8y.github.io/hello/docs/crystal.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/rebol';</script>
+    <link rel="canonical" href="https://rice8y.github.io/hello/docs/rebol.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="D" href="d.html" />
-    <link rel="prev" title="C++" href="cpp.html" />
+    <link rel="next" title="Ruby" href="ruby.html" />
+    <link rel="prev" title="Racket" href="racket.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="unknown"/>
   </head>
@@ -187,7 +187,7 @@
 <li class="toctree-l1"><a class="reference internal" href="ats.html">ATS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c.html">C</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cpp.html">C++</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Crystal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crystal.html">Crystal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="d.html">D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="fortran.html">Fortran</a></li>
 <li class="toctree-l1"><a class="reference internal" href="go.html">Go</a></li>
@@ -205,7 +205,7 @@
 <li class="toctree-l1"><a class="reference internal" href="php.html">PHP</a></li>
 <li class="toctree-l1"><a class="reference internal" href="python.html">Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="racket.html">Racket</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rebol.html">REBOL</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">REBOL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ruby.html">Ruby</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rust.html">Rust</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sbcl.html">SBCL</a></li>
@@ -300,7 +300,7 @@
       
       
       
-      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/crystal.md" target="_blank"
+      <li><a href="https://github.com/rice8y/hello/edit/gh-pages/docs/docs/rebol.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -317,7 +317,7 @@
       
       
       
-      <li><a href="https://github.com/rice8y/hello/issues/new?title=Issue%20on%20page%20%2Fdocs/crystal.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/rice8y/hello/issues/new?title=Issue%20on%20page%20%2Fdocs/rebol.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -347,7 +347,7 @@
       
       
       
-      <li><a href="../_sources/docs/crystal.md" target="_blank"
+      <li><a href="../_sources/docs/rebol.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -431,7 +431,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Crystal</h1>
+    <h1>REBOL</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -442,6 +442,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-symbolic-link">Create a symbolic link</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#version">Version</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 </ul>
@@ -455,22 +456,31 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="crystal">
-<h1>Crystal<a class="headerlink" href="#crystal" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="rebol">
+<h1>REBOL<a class="headerlink" href="#rebol" title="Link to this heading">#</a></h1>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
-<p>Crystalをインストールする.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://crystal-lang.org/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>$<span class="w"> </span>sudo<span class="w"> </span>bash
+<p>REBOL/Coreをダウンロードする.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>wget<span class="w"> </span>https://www.rebol.com/downloads/v278/rebol-core-278-4-3.tar.gz
+$<span class="w"> </span>tar<span class="w"> </span>-xzvf<span class="w"> </span>rebol-core-278-4-3.tar.gz
+</pre></div>
+</div>
+</section>
+<section id="create-a-symbolic-link">
+<h2>Create a symbolic link<a class="headerlink" href="#create-a-symbolic-link" title="Link to this heading">#</a></h2>
+<p>シンボリックリンクを作成する.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>releases/rebol-core
+$<span class="w"> </span>sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>~/releases/rebol-core/rebol<span class="w"> </span>/usr/local/bin/rebol
 </pre></div>
 </div>
 </section>
 <section id="version">
 <h2>Version<a class="headerlink" href="#version" title="Link to this heading">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>crystal<span class="w"> </span>--version
-Crystal<span class="w"> </span><span class="m">1</span>.14.0<span class="w"> </span><span class="o">[</span>dacd97bcc<span class="o">]</span><span class="w"> </span><span class="o">(</span><span class="m">2024</span>-10-09<span class="o">)</span>
-
-LLVM:<span class="w"> </span><span class="m">18</span>.1.6
-Default<span class="w"> </span>target:<span class="w"> </span>x86_64-unknown-linux-gnu
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;q&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>rebol<span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span>-n<span class="w"> </span><span class="s1">&#39;/REBOL\/Core/,/All rights reserved\./p&#39;</span>
+REBOL/Core<span class="w"> </span><span class="m">2</span>.7.8.4.3<span class="w"> </span><span class="o">(</span><span class="m">6</span>-Jan-2011<span class="o">)</span>
+Copyright<span class="w"> </span><span class="m">2011</span><span class="w"> </span>REBOL<span class="w"> </span>Technologies
+REBOL<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>Trademark<span class="w"> </span>of<span class="w"> </span>REBOL<span class="w"> </span>Technologies
+All<span class="w"> </span>rights<span class="w"> </span>reserved.
 </pre></div>
 </div>
 </section>
@@ -478,13 +488,52 @@ Default<span class="w"> </span>target:<span class="w"> </span>x86_64-unknown-lin
 <h2>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h2>
 <div class="tab-set docutils">
 <input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">Code</label><div class="tab-content docutils">
-<p><code class="docutils literal notranslate"><span class="pre">hello.cr</span></code>:</p>
-<div class="highlight-cr notranslate"><div class="highlight"><pre><span></span><span class="nb">puts</span><span class="w"> </span><span class="s2">&quot;Hello, World!&quot;</span>
+<p><code class="docutils literal notranslate"><span class="pre">hello.reb</span></code>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>REBOL [Title: &quot;hello&quot;]
+print &quot;Hello, World!&quot;
 </pre></div>
 </div>
 </div>
 <input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Terminal</label><div class="tab-content docutils">
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>crystal<span class="w"> </span>hello.cr
+<p><strong>Script Ver.</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>rebol<span class="w"> </span>hello.reb
+REBOL/Core<span class="w"> </span><span class="m">2</span>.7.8.4.3<span class="w"> </span><span class="o">(</span><span class="m">6</span>-Jan-2011<span class="o">)</span>
+Copyright<span class="w"> </span><span class="m">2011</span><span class="w"> </span>REBOL<span class="w"> </span>Technologies
+REBOL<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>Trademark<span class="w"> </span>of<span class="w"> </span>REBOL<span class="w"> </span>Technologies
+All<span class="w"> </span>rights<span class="w"> </span>reserved.
+
+Finger<span class="w"> </span>protocol<span class="w"> </span>loaded
+Whois<span class="w"> </span>protocol<span class="w"> </span>loaded
+Daytime<span class="w"> </span>protocol<span class="w"> </span>loaded
+SMTP<span class="w"> </span>protocol<span class="w"> </span>loaded
+ESMTP<span class="w"> </span>protocol<span class="w"> </span>loaded
+POP<span class="w"> </span>protocol<span class="w"> </span>loaded
+IMAP<span class="w"> </span>protocol<span class="w"> </span>loaded
+HTTP<span class="w"> </span>protocol<span class="w"> </span>loaded
+FTP<span class="w"> </span>protocol<span class="w"> </span>loaded
+NNTP<span class="w"> </span>protocol<span class="w"> </span>loaded
+Script:<span class="w"> </span><span class="s2">&quot;hello&quot;</span><span class="w"> </span><span class="o">(</span>none<span class="o">)</span>
+Hello,<span class="w"> </span>World!
+</pre></div>
+</div>
+<p><strong>REPL Ver.</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>rebol
+REBOL/Core<span class="w"> </span><span class="m">2</span>.7.8.4.3<span class="w"> </span><span class="o">(</span><span class="m">6</span>-Jan-2011<span class="o">)</span>
+Copyright<span class="w"> </span><span class="m">2011</span><span class="w"> </span>REBOL<span class="w"> </span>Technologies
+REBOL<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>Trademark<span class="w"> </span>of<span class="w"> </span>REBOL<span class="w"> </span>Technologies
+All<span class="w"> </span>rights<span class="w"> </span>reserved.
+
+Finger<span class="w"> </span>protocol<span class="w"> </span>loaded
+Whois<span class="w"> </span>protocol<span class="w"> </span>loaded
+Daytime<span class="w"> </span>protocol<span class="w"> </span>loaded
+SMTP<span class="w"> </span>protocol<span class="w"> </span>loaded
+ESMTP<span class="w"> </span>protocol<span class="w"> </span>loaded
+POP<span class="w"> </span>protocol<span class="w"> </span>loaded
+IMAP<span class="w"> </span>protocol<span class="w"> </span>loaded
+HTTP<span class="w"> </span>protocol<span class="w"> </span>loaded
+FTP<span class="w"> </span>protocol<span class="w"> </span>loaded
+NNTP<span class="w"> </span>protocol<span class="w"> </span>loaded
+&gt;&gt;<span class="w"> </span>print<span class="w"> </span><span class="s2">&quot;Hello, World!&quot;</span>
 Hello,<span class="w"> </span>World!
 </pre></div>
 </div>
@@ -524,20 +573,20 @@ Hello,<span class="w"> </span>World!
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="cpp.html"
+       href="racket.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">C++</p>
+        <p class="prev-next-title">Racket</p>
       </div>
     </a>
     <a class="right-next"
-       href="d.html"
+       href="ruby.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">D</p>
+        <p class="prev-next-title">Ruby</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -558,6 +607,7 @@ Hello,<span class="w"> </span>World!
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-symbolic-link">Create a symbolic link</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#version">Version</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 </ul>
