@@ -4,6 +4,7 @@ parts:
 - caption: Stdlang
   chapters:
   - file: docs/ada
+  - file: docs/algol68
   - file: docs/ats
   - file: docs/c
   - file: docs/cpp
@@ -26,6 +27,7 @@ parts:
   - file: docs/python
   - file: docs/racket
   - file: docs/rebol
+  - file: docs/rexx
   - file: docs/ruby
   - file: docs/rust
   - file: docs/sbcl

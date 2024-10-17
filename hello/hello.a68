@@ -1,0 +1,3 @@
+BEGIN
+    printf(($gl$,"Hello, World!"))
+END
