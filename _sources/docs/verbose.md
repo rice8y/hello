@@ -6,7 +6,6 @@ Verboseインタプリタをダウンロードする.
 
 ```bash
 $ git clone https://github.com/AndoDaan/EsotericLanguages.git
-$ cd Verbose-Interpreter
 ```
 
 ## Example
