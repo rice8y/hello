@@ -46,3 +46,4 @@ parts:
   - file: docs/shakespeare
   - file: docs/textgarbage
   - file: docs/turimg
+  - file: docs/verbose

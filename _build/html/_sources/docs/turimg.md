@@ -1,4 +1,4 @@
-# turimg
+# Turimg
 
 ## Installation
 
