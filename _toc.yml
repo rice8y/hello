@@ -12,6 +12,7 @@ parts:
   - file: docs/fortran
   - file: docs/go
   - file: docs/haskell
+  - file: docs/icon
   - file: docs/java
   - file: docs/julia
   - file: docs/javascript
