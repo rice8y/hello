@@ -18,6 +18,11 @@ $ uname -r
 ```
 `````
 
+`````{admonition} Supported languages
+:class: tip
+46 languages (as of October 20, 2024).
+`````
+
 ## Code
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=rice8y&repo=hello)](https://github.com/rice8y/hello/tree/main/hello)
